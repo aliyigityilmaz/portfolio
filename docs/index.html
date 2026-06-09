@@ -3,202 +3,285 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ali Yiğit Yılmaz — Game Developer</title>
-  <meta name="description" content="Game Developer & Co-Founder at Triarch Interactive.">
+  <title>Ali Yiğit Yılmaz — Oyun Geliştirici</title>
+  <meta name="description" content="Oyun Geliştirici & Triarch Interactive Kurucu Ortağı. Oyun Tasarımı mezunu, İstanbul.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ── INTRO SCREEN ──────────────────────────────────── -->
+  <!-- ══════════════════════════════════════
+       BOOT SCREEN
+  ══════════════════════════════════════ -->
   <div id="intro" class="intro">
     <canvas id="intro-canvas"></canvas>
-    <div class="intro-scanlines"></div>
+    <div class="crt-lines"></div>
+    <div class="crt-vignette"></div>
+
     <div class="intro-content">
-      <div class="intro-system-text" id="intro-sys">
-        <div class="sys-line" data-delay="0">SYSTEM BOOT .............. <span class="sys-ok">OK</span></div>
-        <div class="sys-line" data-delay="500">PORTFOLIO v1.0 LOADING ... <span class="sys-ok">OK</span></div>
-        <div class="sys-line" data-delay="1000">PLAYER DATA FOUND ........ <span class="sys-ok">READY</span></div>
+      <div class="boot-box">
+        <div class="boot-header">
+          <span class="boot-brand">AYY SYSTEMS</span>
+          <span class="boot-ver">BIOS v2.6.1</span>
+        </div>
+        <div class="boot-divider"></div>
+        <div id="boot-lines" class="boot-lines">
+          <div class="boot-line" data-delay="0">RAM CHECK ................ <span class="ok">64K OK</span></div>
+          <div class="boot-line" data-delay="400">PORTFOLIO MODULE ......... <span class="ok">FOUND</span></div>
+          <div class="boot-line" data-delay="800">GAME RECORDS ............. <span class="ok">LOADED</span></div>
+          <div class="boot-line" data-delay="1200">PLAYER ONE READY ......... <span class="ok">YES</span></div>
+        </div>
+        <div class="boot-divider"></div>
+        <div id="name-block" class="name-block">
+          <div class="insert-coin">— INSERT COIN —</div>
+          <h1 class="player-name">ALI YİĞİT<br>YILMAZ</h1>
+          <div class="player-title">GAME DEVELOPER &nbsp;·&nbsp; CO-FOUNDER</div>
+          <div class="score-row">
+            <span>HI-SCORE</span>
+            <span class="score-val">006</span>
+            <span>YRS EXP</span>
+          </div>
+        </div>
+        <div id="press-start-wrap" class="press-start-wrap">
+          <button id="intro-start" class="press-start">PRESS START</button>
+          <span id="intro-skip" class="skip-link">[ skip ]</span>
+        </div>
       </div>
-      <div class="intro-name-block" id="intro-name-block">
-        <p class="intro-eyebrow">— PLAYER ONE —</p>
-        <h1 class="intro-name" id="intro-name">ALI YİĞİT YILMAZ</h1>
-        <p class="intro-role">GAME DEVELOPER &nbsp;/&nbsp; CO-FOUNDER</p>
-      </div>
-      <button class="intro-start" id="intro-start">
-        <span class="blink-bracket">[</span>&nbsp;PRESS ENTER TO CONTINUE&nbsp;<span class="blink-bracket">]</span>
-      </button>
-      <p class="intro-skip" id="intro-skip">skip intro</p>
     </div>
-    <div class="intro-corner tl"></div>
-    <div class="intro-corner tr"></div>
-    <div class="intro-corner bl"></div>
-    <div class="intro-corner br"></div>
   </div>
 
-  <!-- ── MAIN SITE ──────────────────────────────────────── -->
-  <div id="site" class="site" style="display:none;">
+  <!-- ══════════════════════════════════════
+       MAIN SITE
+  ══════════════════════════════════════ -->
+  <div id="site" style="display:none;">
+    <div class="crt-lines site-crt"></div>
 
-    <!-- HEADER -->
+    <!-- ── HEADER ── -->
     <header id="site-header">
-      <a href="#top" class="logo-link">
-        <span class="logo-mono">AYY</span>
-        <span class="logo-sep">/</span>
-        <span class="logo-full">Ali Yiğit Yılmaz</span>
+      <a href="#top" class="logo">
+        <span class="logo-px">AYY</span>
+        <span class="logo-name">Ali Yiğit Yılmaz</span>
       </a>
       <nav>
-        <a href="#about">About</a>
-        <a href="#games">Games</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav_about">ABOUT</a>
+        <a href="#games" data-i18n="nav_games">GAMES</a>
+        <a href="#personal" data-i18n="nav_arcade">ARCADE</a>
+        <a href="#skills" data-i18n="nav_skills">SKILLS</a>
+        <a href="#contact" data-i18n="nav_contact">CONTACT</a>
       </nav>
-      <div class="header-status">
-        <span class="status-dot"></span>
-        <span class="status-text">Available</span>
+      <div class="header-right">
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="tr">
+            <img src="assets/flags/tr.png" alt="TR">
+            <span>TR</span>
+          </button>
+          <button class="lang-btn active" data-lang="en">
+            <img src="assets/flags/en.png" alt="EN">
+            <span>EN</span>
+          </button>
+          <button class="lang-btn" data-lang="de">
+            <img src="assets/flags/de.png" alt="DE">
+            <span>DE</span>
+          </button>
+        </div>
+        <div class="credit-display">
+          <span class="credit-label">CREDITS</span>
+          <span class="credit-val">03</span>
+        </div>
       </div>
     </header>
 
-    <!-- HERO -->
+    <!-- ── HERO ── -->
     <section class="hero" id="top">
-      <div class="hero-grid-bg"></div>
-      <div class="hero-glow"></div>
-      <div class="hero-main">
-        <div class="hero-tag">
-          <span class="htag-line"></span>
-          Co-Founder @ Triarch Interactive
+      <div class="hero-scanlines"></div>
+
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="marquee-track" data-i18n="marquee">
+            GAME DEV &nbsp;·&nbsp; CO-FOUNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME DESIGN GRADUATE &nbsp;·&nbsp;&nbsp;
+            GAME DEV &nbsp;·&nbsp; CO-FOUNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME DESIGN GRADUATE &nbsp;·&nbsp;&nbsp;
+          </span>
         </div>
+
         <h2 class="hero-title">
-          <span class="ht-line">I Build</span>
-          <span class="ht-line ht-outline">Games.</span>
+          <span class="ht-sub" data-i18n="hero_eyebrow">PLAYER ONE</span>
+          <span class="ht-main">I BUILD<br><span class="ht-accent" data-i18n="hero_accent">GAMES.</span></span>
         </h2>
-        <p class="hero-sub">Game developer focused on mechanics that feel right and experiences worth finishing. Based in Turkey.</p>
-        <div class="hero-ctas">
-          <a href="#games" class="btn-fill">See My Work</a>
-          <a href="#contact" class="btn-ghost">Get in Touch</a>
+
+        <p class="hero-desc" data-i18n="hero_desc">
+          Game developer &amp; co-founder of Triarch Interactive.<br>
+          Making games people actually want to finish.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#games" class="btn-arcade" data-i18n="hero_btn_work">SEE MY WORK</a>
+          <a href="https://www.linkedin.com/in/aliyigityilmaz/" target="_blank" class="btn-outline">LINKEDIN ↗</a>
+          <a href="#contact" class="btn-outline" data-i18n="hero_btn_contact">GET IN TOUCH</a>
+        </div>
+
+        <div class="wip-ticker">
+          <span class="ticker-label" data-i18n="ticker_label">NOW PLAYING:</span>
+          <span class="ticker-val" data-i18n="ticker_1">Endless Check — Designer &amp; Developer</span>
+          <span class="ticker-val" data-i18n="ticker_2">Keep It Checked — Developer</span>
         </div>
       </div>
-      <div class="hero-aside">
-        <div class="wip-card">
-          <div class="wip-label">
-            <span class="wip-dot"></span>
-            CURRENTLY WORKING ON
+
+      <div class="hero-right">
+        <div class="photo-frame">
+          <div class="photo-inner">
+            <img src="assets/ben.png" alt="Ali Yiğit Yılmaz">
+            <div class="photo-placeholder">
+              <span class="ph-icon">👤</span>
+              <span class="ph-text">PHOTO<br>HERE</span>
+              <span class="ph-hint">assets/ben.png</span>
+            </div>
           </div>
-          <p class="wip-game">Endless Check</p>
-          <p class="wip-role">Designer &amp; Developer</p>
+          <div class="photo-label">ALI YİĞİT YILMAZ</div>
+          <div class="photo-sub">GAME DEVELOPER</div>
         </div>
-        <div class="hero-coords">
-          <span>37.8667° N / 32.4833° E</span>
-          <span>TURKEY</span>
-        </div>
-      </div>
-      <div class="hero-scroll">
-        <div class="hs-bar"></div>
-        <span>SCROLL</span>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ── ABOUT ── -->
     <section id="about" class="section reveal">
-      <div class="sec-label"><span class="sec-num">01</span><span>ABOUT</span></div>
-      <div class="about-layout">
-        <div class="about-text-col">
-          <h2 class="sec-title">Making games<br>since before<br>I knew how.</h2>
+      <div class="sec-tag" data-i18n="about_tag">// 01 — ABOUT</div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="sec-title" data-i18n="about_title">PLAYER<br>PROFILE</h2>
+
           <div class="about-body">
-            <p>I'm Ali Yiğit — a game developer and co-founder of <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>. I care about the moment a mechanic clicks: the feel of a control, the rhythm of a challenge, the quiet satisfaction of a system working exactly as intended.</p>
-            <p>I work across the full development loop — design, implementation, iteration. Small teams, sharp vision, games that respect the player.</p>
+            <p data-i18n="about_p1">
+              Ben Ali Yiğit — oyun geliştirici ve
+              <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>'in
+              kurucu ortağı. 2021'den beri oyun yapıyorum; İstanbul'da ve Almanya'da eğitim aldım.
+              Yaklaşık 6 yıllık genel deneyim, 3 yılı profesyonel.
+            </p>
+            <p data-i18n="about_p2">
+              Google Game &amp; App Academy mezunuyum. Küçük ama odaklı ekiplerde, tasarımdan koda tam döngüde çalışıyorum.
+              Oyuncunun vaktine saygı duyan işler yapıyoruz.
+            </p>
+            <p data-i18n="about_p3">
+              Beni asıl ilgilendiren şey bir mekaniğin <em>tıkladığı</em> an: kontrolün hissi, zorluğun ritmi,
+              bir sistemin tam olması gerektiği gibi çalıştığındaki sessiz tatmin.
+            </p>
+          </div>
+
+          <div class="about-badges">
+            <span class="abadge" data-i18n="badge1">🎓 Game Design Graduate</span>
+            <span class="abadge" data-i18n="badge2">🏫 Istanbul &amp; Germany</span>
+            <span class="abadge" data-i18n="badge3">🏆 Google Game Academy</span>
+            <span class="abadge" data-i18n="badge4">📅 Started 2021</span>
           </div>
         </div>
-        <div class="about-stats-col">
-          <div class="astat">
-            <span class="astat-val">3</span>
-            <span class="astat-lbl">Games</span>
+
+        <div class="about-stats">
+          <!-- TOP ROW: Titles + Shipped -->
+          <div class="stat-card">
+            <div class="stat-screen">
+              <div class="stat-label" data-i18n="stat_titles">TITLES</div>
+              <div class="stat-val">3</div>
+              <div class="stat-unit" data-i18n="stat_games">GAMES</div>
+            </div>
           </div>
-          <div class="astat">
-            <span class="astat-val">1</span>
-            <span class="astat-lbl">Released</span>
+          <div class="stat-card">
+            <div class="stat-screen">
+              <div class="stat-label" data-i18n="stat_shipped">SHIPPED</div>
+              <div class="stat-val">1</div>
+              <div class="stat-unit" data-i18n="stat_steam">ON STEAM</div>
+            </div>
           </div>
-          <div class="astat">
-            <span class="astat-val">2</span>
-            <span class="astat-lbl">In Dev</span>
+
+          <!-- SPACER -->
+          <div class="stat-spacer"></div>
+
+          <!-- BOTTOM ROW: Years Active + Pro XP -->
+          <div class="stat-card">
+            <div class="stat-screen">
+              <div class="stat-label" data-i18n="stat_years">YEARS ACTIVE</div>
+              <div class="stat-val">6</div>
+              <div class="stat-unit" data-i18n="stat_years_unit">YEARS</div>
+            </div>
           </div>
-          <div class="astat">
-            <span class="astat-val">100%</span>
-            <span class="astat-lbl">Indie</span>
+          <div class="stat-card">
+            <div class="stat-screen">
+              <div class="stat-label" data-i18n="stat_pro">PRO XP</div>
+              <div class="stat-val">3</div>
+              <div class="stat-unit" data-i18n="stat_years_unit">YEARS</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- GAMES -->
+    <!-- ── GAMES (Professional) ── -->
     <section id="games" class="section reveal">
-      <div class="sec-label"><span class="sec-num">02</span><span>GAMES</span></div>
-      <h2 class="sec-title">Projects</h2>
+      <div class="sec-tag" data-i18n="games_tag">// 02 — PROFESSIONAL TITLES</div>
+      <h2 class="sec-title" data-i18n="games_title">STAGE<br>SELECT</h2>
 
       <div class="games-list">
 
         <article class="game-card" data-status="live">
-          <div class="gc-thumb">
+          <div class="gc-screen">
             <img src="assets/games/keepitcontained.png" alt="Keep It Contained">
-            <div class="gc-overlay">
-              <a href="https://keepitcontained.net" target="_blank" class="btn-sm-outline">View Site ↗</a>
+            <div class="gc-screen-overlay">
+              <div class="gc-status live-badge">● LIVE</div>
             </div>
           </div>
           <div class="gc-info">
-            <div class="gc-top">
-              <div class="gc-badges">
-                <span class="badge live">● Live on Steam</span>
-                <span class="badge role">Game Developer</span>
-              </div>
+            <div class="gc-meta">
+              <span class="gc-platform">STEAM</span>
               <span class="gc-year">2025</span>
             </div>
-            <h3 class="gc-title">Keep It Contained</h3>
-            <p class="gc-desc">First released title at Triarch Interactive. Built end-to-end — core loop design, implementation, and shipped to Steam. Learned what it really means to finish a game.</p>
+            <h3 class="gc-title">KEEP IT CONTAINED</h3>
+            <p class="gc-role" data-i18n="kic_role">Game Developer — Triarch Interactive</p>
+            <p class="gc-desc" data-i18n="kic_desc">İlk çıkan oyunum. Core loop tasarımından koda, Steam'e kadar her şeyiyle ben yaptım. Bir oyunu gerçekten bitirmenin ne demek olduğunu bu projede öğrendim.</p>
             <div class="gc-actions">
-              <a href="https://store.steampowered.com/app/4251090/Keep_It_Contained/" target="_blank" class="btn-sm-fill">Get on Steam</a>
-              <a href="https://keepitcontained.net" target="_blank" class="btn-sm-line">Website</a>
+              <a href="https://store.steampowered.com/app/4251090/Keep_It_Contained/" target="_blank" class="btn-arcade-sm" data-i18n="btn_steam">GET ON STEAM</a>
+              <a href="https://keepitcontained.net" target="_blank" class="btn-line-sm">WEBSITE ↗</a>
             </div>
           </div>
         </article>
 
         <article class="game-card" data-status="dev">
-          <div class="gc-thumb gc-thumb-dev">
+          <div class="gc-screen gc-screen-dev">
             <img src="assets/games/keepitchecked.png" alt="Keep It Checked">
-            <div class="gc-wip-badge">IN DEVELOPMENT</div>
+            <div class="gc-screen-overlay">
+              <div class="gc-status dev-badge">⬡ IN DEV</div>
+            </div>
           </div>
           <div class="gc-info">
-            <div class="gc-top">
-              <div class="gc-badges">
-                <span class="badge dev">⬡ In Development</span>
-                <span class="badge role">Game Developer</span>
-              </div>
+            <div class="gc-meta">
+              <span class="gc-platform">STEAM</span>
               <span class="gc-year">2026</span>
             </div>
-            <h3 class="gc-title">Keep It Checked</h3>
-            <p class="gc-desc">Second entry in the series. Expanding on the foundations of Keep It Contained with sharper mechanics and deeper systems. Steam release coming soon.</p>
+            <h3 class="gc-title">KEEP IT CHECKED</h3>
+            <p class="gc-role" data-i18n="kic2_role">Game Developer — Triarch Interactive</p>
+            <p class="gc-desc" data-i18n="kic2_desc">Serinin ikinci oyunu. Farklı ortam, yeni mekanikler. Hızlı ve verimli üretmenin formülünü burada bulduk.</p>
             <div class="gc-actions">
-              <span class="btn-sm-soon">Steam — Coming Soon</span>
+              <span class="btn-soon" data-i18n="coming_soon">COMING SOON</span>
             </div>
           </div>
         </article>
 
         <article class="game-card" data-status="dev">
-          <div class="gc-thumb gc-thumb-dev">
+          <div class="gc-screen gc-screen-dev">
             <img src="assets/games/endlesscheck.png" alt="Endless Check">
-            <div class="gc-wip-badge">IN DEVELOPMENT</div>
+            <div class="gc-screen-overlay">
+              <div class="gc-status dev-badge">⬡ IN DEV</div>
+            </div>
           </div>
           <div class="gc-info">
-            <div class="gc-top">
-              <div class="gc-badges">
-                <span class="badge dev">⬡ In Development</span>
-                <span class="badge role role-dual">Designer &amp; Developer</span>
-              </div>
+            <div class="gc-meta">
+              <span class="gc-platform">STEAM</span>
               <span class="gc-year">2026</span>
             </div>
-            <h3 class="gc-title">Endless Check</h3>
-            <p class="gc-desc">My most design-forward project yet — leading both game design and development. Building systems that create emergent challenge and meaningful decisions.</p>
+            <h3 class="gc-title">ENDLESS CHECK</h3>
+            <p class="gc-role" data-i18n="ec_role">Designer &amp; Developer</p>
+            <p class="gc-desc" data-i18n="ec_desc">Şimdiye kadar tasarım anlamında en iddialı projem — hem game design hem geliştirme bende. Anlamlı kararlar, gerçekten hissedilen bir zorluk eğrisi.</p>
             <div class="gc-actions">
-              <span class="btn-sm-soon">Steam — Coming Soon</span>
+              <span class="btn-soon" data-i18n="coming_soon">COMING SOON</span>
             </div>
           </div>
         </article>
@@ -206,89 +289,181 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section reveal">
-      <div class="sec-label"><span class="sec-num">03</span><span>SKILLS</span></div>
-      <h2 class="sec-title">Toolkit</h2>
+    <!-- ── PERSONAL / ARCADE PROJECTS ── -->
+    <section id="personal" class="section reveal">
+      <div class="sec-tag" data-i18n="personal_tag">// 03 — PERSONAL PROJECTS</div>
+      <h2 class="sec-title" data-i18n="personal_title">ARCADE<br>CABINET</h2>
+      <p class="arcade-intro" data-i18n="arcade_intro">
+        Öğrencilik ve kişisel projeler — denemeler, jam oyunları, yaparak öğrenmek.
+        Bitmiş değil, cilalı değil ama dürüst.
+        <a href="https://aliyigityilmaz.itch.io" target="_blank" class="tlink" data-i18n="itch_link">Tüm oyunlar itch.io'da ↗</a>
+      </p>
 
-      <div class="skills-grid">
-        <div class="skill-col">
-          <h4 class="skill-col-title">Development</h4>
+      <div class="arcade-grid">
+        <a href="https://aliyigityilmaz.itch.io" target="_blank" class="arcade-card">
+          <div class="ac-screen">
+            <img src="assets/games/personal1.png" alt="Lightyears">
+            <div class="ac-placeholder" style="display:none"><span>?</span></div>
+            <div class="ac-overlay">PLAY ↗</div>
+          </div>
+          <div class="ac-info">
+            <span class="ac-tag" data-i18n="tag_student">STUDENT</span>
+            <p class="ac-title">PROJECT BULLET HELL</p>
+            <p class="ac-sub">Lightyears</p>
+          </div>
+        </a>
+
+        <a href="https://aliyigityilmaz.itch.io" target="_blank" class="arcade-card">
+          <div class="ac-screen">
+            <img src="assets/games/personal2.png" alt="Fallen Kingdom">
+            <div class="ac-placeholder" style="display:none"><span>?</span></div>
+            <div class="ac-overlay">PLAY ↗</div>
+          </div>
+          <div class="ac-info">
+            <span class="ac-tag" data-i18n="tag_student">STUDENT</span>
+            <p class="ac-title">PROJECT NOVEL</p>
+            <p class="ac-sub">Fallen Kingdom</p>
+          </div>
+        </a>
+
+        <a href="https://aliyigityilmaz.itch.io" target="_blank" class="arcade-card">
+          <div class="ac-screen">
+            <img src="assets/games/personal3.png" alt="Sylvara">
+            <div class="ac-placeholder" style="display:none"><span>?</span></div>
+            <div class="ac-overlay">PLAY ↗</div>
+          </div>
+          <div class="ac-info">
+            <span class="ac-tag" data-i18n="tag_proto">PROTOTYPE</span>
+            <p class="ac-title">PROJECT GRADUATION</p>
+            <p class="ac-sub">Sylvara</p>
+          </div>
+        </a>
+
+        <a href="https://aliyigityilmaz.itch.io" target="_blank" class="arcade-card arcade-more">
+          <div class="ac-screen ac-more-screen">
+            <div class="ac-more-inner">
+              <span class="ac-more-icon">▶</span>
+              <span class="ac-more-text" data-i18n="see_all">SEE ALL<br>ON ITCH.IO</span>
+            </div>
+          </div>
+          <div class="ac-info">
+            <span class="ac-tag">ITCH.IO</span>
+            <p class="ac-title" data-i18n="all_projects">ALL PROJECTS</p>
+            <p class="ac-sub">aliyigityilmaz.itch.io</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills" class="section reveal">
+      <div class="sec-tag" data-i18n="skills_tag">// 04 — SKILLS</div>
+      <h2 class="sec-title" data-i18n="skills_title">POWER<br>UPS</h2>
+
+      <div class="skills-board">
+        <div class="skill-panel">
+          <div class="skill-panel-title" data-i18n="skills_dev">DEVELOPMENT</div>
           <ul class="skill-list">
-            <li><span class="sn">Unity</span><div class="sb"><div class="sf" style="--w:90%"></div></div></li>
-            <li><span class="sn">C#</span><div class="sb"><div class="sf" style="--w:85%"></div></div></li>
-            <li><span class="sn">Game Systems</span><div class="sb"><div class="sf" style="--w:88%"></div></div></li>
-            <li><span class="sn">Physics &amp; Sim</span><div class="sb"><div class="sf" style="--w:74%"></div></div></li>
+            <li><span class="sk-name">Unity</span>        <div class="sk-bar"><div class="sk-fill" style="--w:90%"></div></div><span class="sk-pct">90</span></li>
+            <li><span class="sk-name">C#</span>           <div class="sk-bar"><div class="sk-fill" style="--w:85%"></div></div><span class="sk-pct">85</span></li>
+            <li><span class="sk-name">Game Systems</span> <div class="sk-bar"><div class="sk-fill" style="--w:88%"></div></div><span class="sk-pct">88</span></li>
+            <li><span class="sk-name">Physics &amp; Sim</span><div class="sk-bar"><div class="sk-fill" style="--w:74%"></div></div><span class="sk-pct">74</span></li>
           </ul>
         </div>
-        <div class="skill-col">
-          <h4 class="skill-col-title">Design</h4>
+        <div class="skill-panel">
+          <div class="skill-panel-title" data-i18n="skills_design">DESIGN</div>
           <ul class="skill-list">
-            <li><span class="sn">Game Design</span><div class="sb"><div class="sf" style="--w:85%"></div></div></li>
-            <li><span class="sn">Level Design</span><div class="sb"><div class="sf" style="--w:78%"></div></div></li>
-            <li><span class="sn">UX / UI</span><div class="sb"><div class="sf" style="--w:72%"></div></div></li>
-            <li><span class="sn">Prototyping</span><div class="sb"><div class="sf" style="--w:90%"></div></div></li>
+            <li><span class="sk-name">Game Design</span>  <div class="sk-bar"><div class="sk-fill" style="--w:85%"></div></div><span class="sk-pct">85</span></li>
+            <li><span class="sk-name">Level Design</span> <div class="sk-bar"><div class="sk-fill" style="--w:78%"></div></div><span class="sk-pct">78</span></li>
+            <li><span class="sk-name">UX / UI</span>      <div class="sk-bar"><div class="sk-fill" style="--w:72%"></div></div><span class="sk-pct">72</span></li>
+            <li><span class="sk-name">Web Design</span>   <div class="sk-bar"><div class="sk-fill" style="--w:68%"></div></div><span class="sk-pct">68</span></li>
+            <li><span class="sk-name">Prototyping</span>  <div class="sk-bar"><div class="sk-fill" style="--w:90%"></div></div><span class="sk-pct">90</span></li>
           </ul>
         </div>
-        <div class="skill-col">
-          <h4 class="skill-col-title">Tools</h4>
+        <div class="skill-panel">
+          <div class="skill-panel-title" data-i18n="skills_tools">TOOLS</div>
           <ul class="skill-list">
-            <li><span class="sn">Git</span><div class="sb"><div class="sf" style="--w:80%"></div></div></li>
-            <li><span class="sn">Steamworks</span><div class="sb"><div class="sf" style="--w:70%"></div></div></li>
-            <li><span class="sn">Figma</span><div class="sb"><div class="sf" style="--w:65%"></div></div></li>
-            <li><span class="sn">Shader / VFX</span><div class="sb"><div class="sf" style="--w:60%"></div></div></li>
+            <li><span class="sk-name">Git</span>          <div class="sk-bar"><div class="sk-fill" style="--w:80%"></div></div><span class="sk-pct">80</span></li>
+            <li><span class="sk-name">Blender</span>      <div class="sk-bar"><div class="sk-fill" style="--w:62%"></div></div><span class="sk-pct">62</span></li>
+            <li><span class="sk-name">Steamworks</span>   <div class="sk-bar"><div class="sk-fill" style="--w:70%"></div></div><span class="sk-pct">70</span></li>
+            <li><span class="sk-name">Figma</span>        <div class="sk-bar"><div class="sk-fill" style="--w:65%"></div></div><span class="sk-pct">65</span></li>
+            <li><span class="sk-name">Shader / VFX</span><div class="sk-bar"><div class="sk-fill" style="--w:60%"></div></div><span class="sk-pct">60</span></li>
           </ul>
         </div>
       </div>
-      <p class="skills-note">// skill levels are self-assessed — the only honest way to do it.</p>
+      <p class="skills-note" data-i18n="skills_note">// self-assessed — the only honest way.</p>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ── CONTACT ── -->
     <section id="contact" class="section reveal">
-      <div class="sec-label"><span class="sec-num">04</span><span>CONTACT</span></div>
-      <div class="contact-layout">
+      <div class="sec-tag" data-i18n="contact_tag">// 05 — CONTACT</div>
+
+      <div class="contact-grid">
         <div class="contact-left">
-          <h2 class="sec-title">Let's build<br>something.</h2>
-          <p class="contact-sub">Open to collaborations, opportunities, and interesting conversations about games.</p>
-          <a href="mailto:aliyigityilmaz@gmail.com" class="email-cta">
+          <h2 class="sec-title" data-i18n="contact_title">CONTINUE?</h2>
+          <div class="countdown">
+            <span class="cd-digit">9</span>
+            <span class="cd-digit">8</span>
+            <span class="cd-digit">7</span>
+            <span class="cd-digit cd-active">6</span>
+          </div>
+          <p class="contact-sub" data-i18n="contact_sub">
+            İş birliği, fırsatlar veya oyunlar hakkında güzel bir sohbet — kapım açık.
+          </p>
+          <a href="mailto:aliyigityilmaz1@gmail.com" class="email-cta">
             <span class="ec-arrow">→</span>
-            <span>aliyigityilmaz@gmail.com</span>
+            aliyigityilmaz1@gmail.com
           </a>
         </div>
+
         <div class="contact-right">
-          <h4 class="social-title">Find me online</h4>
-          <ul class="social-list">
-            <li><a href="https://github.com/aliyigityilmaz" target="_blank" class="social-row">
-              <span class="sp">GitHub</span><span class="sh">@aliyigityilmaz</span><span class="sa">↗</span>
-            </a></li>
-            <li><a href="https://www.linkedin.com/in/aliyigityilmaz/" target="_blank" class="social-row">
-              <span class="sp">LinkedIn</span><span class="sh">Ali Yiğit Yılmaz</span><span class="sa">↗</span>
-            </a></li>
-            <li><a href="https://www.instagram.com/aliyigityilmz/" target="_blank" class="social-row">
-              <span class="sp">Instagram</span><span class="sh">@aliyigityilmz</span><span class="sa">↗</span>
-            </a></li>
-            <li><a href="https://triarchinteractive.com" target="_blank" class="social-row">
-              <span class="sp">Triarch Interactive</span><span class="sh">Studio Site</span><span class="sa">↗</span>
-            </a></li>
-          </ul>
-          <p class="social-note">// update handles before deploying</p>
+          <div class="leaderboard">
+            <div class="lb-title" data-i18n="lb_title">FIND ME ONLINE</div>
+            <a href="https://github.com/aliyigityilmaz" target="_blank" class="lb-row">
+              <span class="lb-rank">01</span>
+              <span class="lb-name">GitHub</span>
+              <span class="lb-score">@aliyigityilmaz</span>
+              <span class="lb-arrow">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/aliyigityilmaz/" target="_blank" class="lb-row">
+              <span class="lb-rank">02</span>
+              <span class="lb-name">LinkedIn</span>
+              <span class="lb-score">Ali Yiğit Yılmaz</span>
+              <span class="lb-arrow">↗</span>
+            </a>
+            <a href="https://www.instagram.com/aliyigityilmz/" target="_blank" class="lb-row">
+              <span class="lb-rank">03</span>
+              <span class="lb-name">Instagram</span>
+              <span class="lb-score">@aliyigityilmz</span>
+              <span class="lb-arrow">↗</span>
+            </a>
+            <a href="https://aliyigityilmaz.itch.io" target="_blank" class="lb-row">
+              <span class="lb-rank">04</span>
+              <span class="lb-name">Itch.io</span>
+              <span class="lb-score">aliyigityilmaz</span>
+              <span class="lb-arrow">↗</span>
+            </a>
+            <a href="https://triarchinteractive.com" target="_blank" class="lb-row">
+              <span class="lb-rank">05</span>
+              <span class="lb-name">Triarch</span>
+              <span class="lb-score" data-i18n="lb_studio">Studio Site</span>
+              <span class="lb-arrow">↗</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ── FOOTER ── -->
     <footer>
       <div class="footer-inner">
-        <span class="foot-name">ALI YİĞİT YILMAZ</span>
-        <span class="foot-copy">© 2026 — All rights reserved</span>
-        <a href="#top" class="foot-top">↑ Top</a>
+        <span class="foot-left">© 2026 ALI YİĞİT YILMAZ</span>
+        <span class="foot-center" data-i18n="footer_center">GAME OVER? NEVER.</span>
+        <a href="#top" class="foot-top">↑ 1UP</a>
       </div>
     </footer>
 
-  </div>
-
-  <!-- CURSOR -->
-  <div id="cursor" class="cursor"></div>
+  </div><!-- /site -->
 
   <script src="main.js"></script>
 </body>
