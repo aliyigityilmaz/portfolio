@@ -8,93 +8,92 @@
 ═══════════════════════════════════════════════════════════ */
 const TRANSLATIONS = {
   tr: {
-  nav_about: 'HAKKIMDA',
-  nav_games: 'OYUNLAR',
-  nav_arcade: 'PROJELER',
-  nav_skills: 'YETENEKLER',
-  nav_contact: 'İLETİŞİM',
+    nav_about: 'HAKKIMDA',
+    nav_games: 'OYUNLAR',
+    nav_arcade: 'PROJELER',
+    nav_skills: 'YETENEKLER',
+    nav_contact: 'İLETİŞİM',
 
-  marquee: 'OYUN GELİŞTİRİCİ &nbsp;·&nbsp; KURUCU ORTAK &nbsp;·&nbsp; İSTANBUL &nbsp;·&nbsp; OYUN TASARIMI MEZUNU &nbsp;·&nbsp;&nbsp; OYUN GELİŞTİRİCİ &nbsp;·&nbsp; KURUCU ORTAK &nbsp;·&nbsp; İSTANBUL &nbsp;·&nbsp; OYUN TASARIMI MEZUNU &nbsp;·&nbsp;&nbsp;',
+    marquee: 'OYUN GELİŞTİRİCİ &nbsp;·&nbsp; KURUCU ORTAK &nbsp;·&nbsp; İSTANBUL &nbsp;·&nbsp; OYUN TASARIMI MEZUNU &nbsp;·&nbsp;&nbsp; OYUN GELİŞTİRİCİ &nbsp;·&nbsp; KURUCU ORTAK &nbsp;·&nbsp; İSTANBUL &nbsp;·&nbsp; OYUN TASARIMI MEZUNU &nbsp;·&nbsp;&nbsp;',
 
-  hero_eyebrow: 'OYUNCU BİR',
-  hero_accent: 'OYUNLAR.',
-  hero_desc: 'Oyun geliştirici ve <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a> kurucu ortağı.<br>İnsanların gerçekten sonuna kadar oynamak isteyeceği oyunlar geliştiriyorum.',
-  hero_btn_work: 'PROJELERİM',
-  hero_btn_contact: 'İLETİŞİME GEÇ',
+    hero_role: 'OYUN GELİŞTİRİCİ / TASARIMCI',
+    hero_desc: 'Oyun geliştirici ve <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a> kurucu ortağı.<br>İnsanların gerçekten sonuna kadar oynamak isteyeceği oyunlar geliştiriyorum.',
+    hero_btn_work: 'PROJELERİM',
+    hero_btn_contact: 'İLETİŞİME GEÇ',
 
-  ticker_label: 'ŞU AN ÜZERİNDE ÇALIŞTIĞIM:',
-  ticker_1: 'Endless Check — Tasarım & Geliştirme',
-  ticker_2: 'Keep It Checked — Geliştirici',
+    ticker_label: 'ŞU AN ÜZERİNDE ÇALIŞTIĞIM:',
+    ticker_1: 'Endless Check — Tasarım & Geliştirme',
+    ticker_2: 'Keep It Checked — Geliştirici',
 
-  about_tag: '// 01 — HAKKIMDA',
-  about_title: 'OYUNCU<br>PROFİLİ',
+    about_tag: '// 01 — HAKKIMDA',
+    about_title: 'OYUNCU<br>PROFİLİ',
 
-  about_p1: 'Ben Ali Yiğit. Oyun geliştirici ve <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a> kurucu ortağıyım. 2021 yılından beri oyun geliştiriyorum. Eğitim hayatım İstanbul ve Almanya arasında geçti. Toplamda yaklaşık 6 yıllık deneyime, bunun 3 yılında ise profesyonel çalışma geçmişine sahibim.',
+    about_p1: 'Ben Ali Yiğit. Oyun geliştirici ve <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a> kurucu ortağıyım. 2021 yılından beri oyun geliştiriyorum. Eğitim hayatım İstanbul ve Almanya arasında geçti. Toplamda yaklaşık 6 yıllık deneyime, bunun 3 yılında ise profesyonel çalışma geçmişine sahibim.',
 
-  about_p2: 'Google Game & App Academy mezunuyum. Tasarımdan geliştirmeye kadar üretimin tüm aşamalarında aktif rol alıyorum. Genellikle küçük ama yüksek motivasyonlu ekiplerle çalışıyor, oyuncunun zamanına değer veren deneyimler üretmeye odaklanıyorum.',
+    about_p2: 'Google Game & App Academy mezunuyum. Tasarımdan geliştirmeye kadar üretimin tüm aşamalarında aktif rol alıyorum. Genellikle küçük ama yüksek motivasyonlu ekiplerle çalışıyor, oyuncunun zamanına değer veren deneyimler üretmeye odaklanıyorum.',
 
-  about_p3: 'Beni en çok heyecanlandıran şey, bir mekaniğin tam anlamıyla yerine oturduğu andır. Kontrollerin hissi, zorluk eğrisinin ritmi ve bir sistemin kusursuz çalışmasının verdiği o sessiz tatmin.',
+    about_p3: 'Beni en çok heyecanlandıran şey, bir mekaniğin tam anlamıyla yerine oturduğu andır. Kontrollerin hissi, zorluk eğrisinin ritmi ve bir sistemin kusursuz çalışmasının verdiği o sessiz tatmin.',
 
-  badge1: '🎓 Oyun Tasarımı Mezunu',
-  badge2: '🏫 İstanbul & Almanya',
-  badge3: '🏆 Google Game Academy',
-  badge4: '📅 2021\'den Beri',
+    badge1: '🎓 Oyun Tasarımı Mezunu',
+    badge2: '🏫 İstanbul & Almanya',
+    badge3: '🏆 Google Game Academy',
+    badge4: '📅 2021\'den Beri',
 
-  stat_titles: 'OYUN',
-  stat_games: 'ADET',
-  stat_shipped: 'YAYINLANAN',
-  stat_steam: 'STEAM\'DE',
-  stat_years: 'TOPLAM DENEYİM',
-  stat_years_unit: 'YIL',
-  stat_pro: 'PROFESYONEL',
+    stat_titles: 'OYUN',
+    stat_games: 'ADET',
+    stat_shipped: 'YAYINLANAN',
+    stat_steam: 'STEAM\'DE',
+    stat_years: 'TOPLAM DENEYİM',
+    stat_years_unit: 'YIL',
+    stat_pro: 'PROFESYONEL',
 
-  games_tag: '// 02 — PROFESYONEL PROJELER',
-  games_title: 'PROJE<br>SEÇ',
+    games_tag: '// 02 — PROFESYONEL PROJELER',
+    games_title: 'PROJE<br>SEÇ',
 
-  kic_role: 'Oyun Geliştirici — Triarch Interactive',
-  kic_desc: 'İlk ticari oyunum. Temel oynanış tasarımından geliştirme sürecine, testlerden Steam çıkışına kadar projenin her aşamasında yer aldım. Bir oyunu fikir aşamasından yayına kadar taşımanın ne gerektirdiğini bu projede öğrendim.',
+    kic_role: 'Oyun Geliştirici — Triarch Interactive',
+    kic_desc: 'İlk ticari oyunum. Temel oynanış tasarımından geliştirme sürecine, testlerden Steam çıkışına kadar projenin her aşamasında yer aldım. Bir oyunu fikir aşamasından yayına kadar taşımanın ne gerektirdiğini bu projede öğrendim.',
 
-  kic2_role: 'Oyun Geliştirici — Triarch Interactive',
-  kic2_desc: 'Serinin ikinci oyunu. Yeni mekanikler, yeni bir ortam ve daha olgun bir geliştirme süreci. İlk projeden edindiğimiz deneyimleri burada uyguluyoruz.',
+    kic2_role: 'Oyun Geliştirici — Triarch Interactive',
+    kic2_desc: 'Serinin ikinci oyunu. Yeni mekanikler, yeni bir ortam ve daha olgun bir geliştirme süreci. İlk projeden edindiğimiz deneyimleri burada uyguluyoruz.',
 
-  ec_role: 'Tasarım & Geliştirme',
-  ec_desc: 'Bugüne kadar üzerinde çalıştığım en iddialı tasarım projesi. Hem oyun tasarımı hem de geliştirme tarafını üstleniyorum. Oyuncunun kararlarının gerçekten önem taşıdığı ve zorluk eğrisinin hissedildiği bir deneyim yaratmayı hedefliyorum.',
+    ec_role: 'Tasarım & Geliştirme',
+    ec_desc: 'Bugüne kadar üzerinde çalıştığım en iddialı tasarım projesi. Hem oyun tasarımı hem de geliştirme tarafını üstleniyorum. Oyuncunun kararlarının gerçekten önem taşıdığı ve zorluk eğrisinin hissedildiği bir deneyim yaratmayı hedefliyorum.',
 
-  btn_steam: 'STEAM SAYFASI',
-  coming_soon: 'YAKINDA',
+    btn_steam: 'STEAM SAYFASI',
+    coming_soon: 'YAKINDA',
 
-  personal_tag: '// 03 — KİŞİSEL PROJELER',
-  personal_title: 'PROJE<br>ARŞİVİ',
+    personal_tag: '// 03 — KİŞİSEL PROJELER',
+    personal_title: 'PROJE<br>ARŞİVİ',
 
-  arcade_intro: 'Öğrencilik döneminden ve kişisel çalışmalarımdan projeler. Deneyler, game jam çalışmaları ve öğrenme süreçleri. Kusursuz değiller ama gelişimimin önemli parçaları.',
+    arcade_intro: 'Öğrencilik döneminden ve kişisel çalışmalarımdan projeler. Deneyler, game jam çalışmaları ve öğrenme süreçleri. Kusursuz değiller ama gelişimimin önemli parçaları.',
 
-  itch_link: 'Tüm projeler itch.io\'da ↗',
+    itch_link: 'Tüm projeler itch.io\'da ↗',
 
-  tag_student: 'ÖĞRENCİ',
-  tag_proto: 'PROTOTİP',
+    tag_student: 'ÖĞRENCİ',
+    tag_proto: 'PROTOTİP',
 
-  see_all: 'TÜMÜNÜ<br>GÖR',
-  all_projects: 'TÜM PROJELER',
+    see_all: 'TÜMÜNÜ<br>GÖR',
+    all_projects: 'TÜM PROJELER',
 
-  skills_tag: '// 04 — YETENEKLER',
-  skills_title: 'YETENEKLER',
+    skills_tag: '// 04 — YETENEKLER',
+    skills_title: 'YETENEKLER',
 
-  skills_dev: 'GELİŞTİRME',
-  skills_design: 'TASARIM',
-  skills_tools: 'ARAÇLAR',
+    skills_dev: 'GELİŞTİRME',
+    skills_design: 'TASARIM',
+    skills_tools: 'ARAÇLAR',
 
-  skills_note: '// kişisel değerlendirme.',
+    skills_note: '// kişisel değerlendirme.',
 
-  contact_tag: '// 05 — İLETİŞİM',
-  contact_title: 'İLETİŞİM',
+    contact_tag: '// 05 — İLETİŞİM',
+    contact_title: 'İLETİŞİM',
 
-  contact_sub: 'İş birlikleri, kariyer fırsatları veya oyun geliştirme üzerine güzel bir sohbet için bana ulaşabilirsin.',
+    contact_sub: 'İş birlikleri, kariyer fırsatları veya oyun geliştirme üzerine güzel bir sohbet için bana ulaşabilirsin.',
 
-  lb_title: 'BENİ BUL',
-  lb_studio: 'Stüdyo Sitesi',
+    lb_title: 'BENİ BUL',
+    lb_studio: 'Stüdyo Sitesi',
 
-  footer_center: 'GAME OVER? ASLA.'
-},
+    footer_center: 'GAME OVER? ASLA.'
+  },
 
   en: {
     nav_about:    'ABOUT',
@@ -104,14 +103,14 @@ const TRANSLATIONS = {
     nav_contact:  'CONTACT',
 
     marquee: 'GAME DEV &nbsp;·&nbsp; CO-FOUNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME DESIGN GRADUATE &nbsp;·&nbsp;&nbsp; GAME DEV &nbsp;·&nbsp; CO-FOUNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME DESIGN GRADUATE &nbsp;·&nbsp;&nbsp;',
-    hero_eyebrow: 'PLAYER ONE',
-    hero_accent:  'GAMES.',
-    hero_desc:    'Game developer & co-founder of Triarch Interactive.<br>Making games people actually want to finish.',
-    hero_btn_work: 'SEE MY WORK',
-    hero_btn_contact: 'GET IN TOUCH',
-    ticker_label: 'NOW PLAYING:',
-    ticker_1:     'Endless Check — Designer & Developer',
-    ticker_2:     'Keep It Checked — Developer',
+
+    hero_role:       'GAME DEVELOPER / DESIGNER',
+    hero_desc:       'Game developer &amp; co-founder of Triarch Interactive.<br>Making games people actually want to finish.',
+    hero_btn_work:   'SEE MY WORK',
+    hero_btn_contact:'GET IN TOUCH',
+    ticker_label:    'NOW PLAYING:',
+    ticker_1:        'Endless Check — Designer & Developer',
+    ticker_2:        'Keep It Checked — Developer',
 
     about_tag:   '// 01 — ABOUT',
     about_title: 'PLAYER<br>PROFILE',
@@ -167,94 +166,93 @@ const TRANSLATIONS = {
   },
 
   de: {
-  nav_about: 'ÜBER MICH',
-  nav_games: 'SPIELE',
-  nav_arcade: 'PROJEKTE',
-  nav_skills: 'KENNTNISSE',
-  nav_contact: 'KONTAKT',
+    nav_about: 'ÜBER MICH',
+    nav_games: 'SPIELE',
+    nav_arcade: 'PROJEKTE',
+    nav_skills: 'KENNTNISSE',
+    nav_contact: 'KONTAKT',
 
-  marquee: 'SPIELEENTWICKLER &nbsp;·&nbsp; MITGRÜNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME-DESIGN ABSOLVENT &nbsp;·&nbsp;&nbsp; SPIELEENTWICKLER &nbsp;·&nbsp; MITGRÜNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME-DESIGN ABSOLVENT &nbsp;·&nbsp;&nbsp;',
+    marquee: 'SPIELEENTWICKLER &nbsp;·&nbsp; MITGRÜNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME-DESIGN ABSOLVENT &nbsp;·&nbsp;&nbsp; SPIELEENTWICKLER &nbsp;·&nbsp; MITGRÜNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME-DESIGN ABSOLVENT &nbsp;·&nbsp;&nbsp;',
 
-  hero_eyebrow: 'PLAYER ONE',
-  hero_accent: 'SPIELE.',
-  hero_desc: 'Spieleentwickler und Mitgründer von Triarch Interactive.<br>Ich entwickle Spiele, die Spieler wirklich bis zum Ende erleben möchten.',
+    hero_role: 'SPIELEENTWICKLER / DESIGNER',
+    hero_desc: 'Spieleentwickler und Mitgründer von Triarch Interactive.<br>Ich entwickle Spiele, die Spieler wirklich bis zum Ende erleben möchten.',
 
-  hero_btn_work: 'MEINE PROJEKTE',
-  hero_btn_contact: 'KONTAKT',
+    hero_btn_work: 'MEINE PROJEKTE',
+    hero_btn_contact: 'KONTAKT',
 
-  ticker_label: 'AKTUELL:',
-  ticker_1: 'Endless Check — Design & Entwicklung',
-  ticker_2: 'Keep It Checked — Entwickler',
+    ticker_label: 'AKTUELL:',
+    ticker_1: 'Endless Check — Design & Entwicklung',
+    ticker_2: 'Keep It Checked — Entwickler',
 
-  about_tag: '// 01 — ÜBER MICH',
-  about_title: 'PROFIL',
+    about_tag: '// 01 — ÜBER MICH',
+    about_title: 'PROFIL',
 
-  about_p1: 'Ich bin Ali Yiğit, Spieleentwickler und Mitgründer von <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>. Seit 2021 entwickle ich Spiele und habe sowohl in Istanbul als auch in Deutschland studiert. Insgesamt verfüge ich über rund sechs Jahre Erfahrung, davon drei Jahre im professionellen Umfeld.',
+    about_p1: 'Ich bin Ali Yiğit, Spieleentwickler und Mitgründer von <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>. Seit 2021 entwickle ich Spiele und habe sowohl in Istanbul als auch in Deutschland studiert. Insgesamt verfüge ich über rund sechs Jahre Erfahrung, davon drei Jahre im professionellen Umfeld.',
 
-  about_p2: 'Als Absolvent der Google Game & App Academy begleite ich Projekte über den gesamten Entwicklungsprozess hinweg – von der Konzeption bis zur Umsetzung. Besonders gerne arbeite ich in kleinen, fokussierten Teams mit klaren Zielen und hoher Eigenverantwortung.',
+    about_p2: 'Als Absolvent der Google Game & App Academy begleite ich Projekte über den gesamten Entwicklungsprozess hinweg – von der Konzeption bis zur Umsetzung. Besonders gerne arbeite ich in kleinen, fokussierten Teams mit klaren Zielen und hoher Eigenverantwortung.',
 
-  about_p3: 'Besonders faszinieren mich die Momente, in denen eine Spielmechanik perfekt funktioniert: das Gefühl einer Steuerung, der Rhythmus einer Herausforderung und die Zufriedenheit, wenn jedes System genau so arbeitet, wie es vorgesehen ist.',
+    about_p3: 'Besonders faszinieren mich die Momente, in denen eine Spielmechanik perfekt funktioniert: das Gefühl einer Steuerung, der Rhythmus einer Herausforderung und die Zufriedenheit, wenn jedes System genau so arbeitet, wie es vorgesehen ist.',
 
-  badge1: '🎓 Game-Design Absolvent',
-  badge2: '🏫 Istanbul & Deutschland',
-  badge3: '🏆 Google Game Academy',
-  badge4: '📅 Seit 2021',
+    badge1: '🎓 Game-Design Absolvent',
+    badge2: '🏫 Istanbul & Deutschland',
+    badge3: '🏆 Google Game Academy',
+    badge4: '📅 Seit 2021',
 
-  stat_titles: 'TITEL',
-  stat_games: 'SPIELE',
-  stat_shipped: 'VERÖFFENTLICHT',
-  stat_steam: 'AUF STEAM',
-  stat_years: 'ERFAHRUNG',
-  stat_years_unit: 'JAHRE',
-  stat_pro: 'BERUFLICH',
+    stat_titles: 'TITEL',
+    stat_games: 'SPIELE',
+    stat_shipped: 'VERÖFFENTLICHT',
+    stat_steam: 'AUF STEAM',
+    stat_years: 'ERFAHRUNG',
+    stat_years_unit: 'JAHRE',
+    stat_pro: 'BERUFLICH',
 
-  games_tag: '// 02 — VERÖFFENTLICHTE & AKTUELLE PROJEKTE',
-  games_title: 'PROJEKT<br>AUSWAHL',
+    games_tag: '// 02 — VERÖFFENTLICHTE & AKTUELLE PROJEKTE',
+    games_title: 'PROJEKT<br>AUSWAHL',
 
-  kic_role: 'Spieleentwickler — Triarch Interactive',
-  kic_desc: 'Mein erstes veröffentlichtes Spiel. Von der Gestaltung des Core-Loops über die technische Umsetzung bis hin zur Veröffentlichung auf Steam war ich an allen wesentlichen Bereichen beteiligt. Dieses Projekt hat mir gezeigt, was es wirklich bedeutet, ein Spiel erfolgreich abzuschließen.',
+    kic_role: 'Spieleentwickler — Triarch Interactive',
+    kic_desc: 'Mein erstes veröffentlichtes Spiel. Von der Gestaltung des Core-Loops über die technische Umsetzung bis hin zur Veröffentlichung auf Steam war ich an allen wesentlichen Bereichen beteiligt. Dieses Projekt hat mir gezeigt, was es wirklich bedeutet, ein Spiel erfolgreich abzuschließen.',
 
-  kic2_role: 'Spieleentwickler — Triarch Interactive',
-  kic2_desc: 'Der zweite Teil der Reihe. Neue Umgebung, neue Mechaniken und ein deutlich reiferer Entwicklungsprozess. Viele der Erkenntnisse aus dem ersten Projekt fließen direkt in dieses Spiel ein.',
+    kic2_role: 'Spieleentwickler — Triarch Interactive',
+    kic2_desc: 'Der zweite Teil der Reihe. Neue Umgebung, neue Mechaniken und ein deutlich reiferer Entwicklungsprozess. Viele der Erkenntnisse aus dem ersten Projekt fließen direkt in dieses Spiel ein.',
 
-  ec_role: 'Design & Entwicklung',
-  ec_desc: 'Mein bislang ambitioniertestes Designprojekt. Ich verantworte sowohl das Game Design als auch die technische Entwicklung. Ziel ist ein Spielerlebnis, in dem Entscheidungen spürbare Konsequenzen haben und die Progression bewusst gestaltet ist.',
+    ec_role: 'Design & Entwicklung',
+    ec_desc: 'Mein bislang ambitioniertestes Designprojekt. Ich verantworte sowohl das Game Design als auch die technische Entwicklung. Ziel ist ein Spielerlebnis, in dem Entscheidungen spürbare Konsequenzen haben und die Progression bewusst gestaltet ist.',
 
-  btn_steam: 'AUF STEAM',
-  coming_soon: 'DEMNÄCHST',
+    btn_steam: 'AUF STEAM',
+    coming_soon: 'DEMNÄCHST',
 
-  personal_tag: '// 03 — PERSÖNLICHE PROJEKTE',
-  personal_title: 'PROJEKT<br>ARCHIV',
+    personal_tag: '// 03 — PERSÖNLICHE PROJEKTE',
+    personal_title: 'PROJEKT<br>ARCHIV',
 
-  arcade_intro: 'Studien- und Privatprojekte, Experimente sowie Game-Jam-Beiträge. Nicht jedes Projekt wurde vollständig ausgearbeitet, aber jedes einzelne war ein wichtiger Schritt auf meinem Weg als Entwickler.',
+    arcade_intro: 'Studien- und Privatprojekte, Experimente sowie Game-Jam-Beiträge. Nicht jedes Projekt wurde vollständig ausgearbeitet, aber jedes einzelne war ein wichtiger Schritt auf meinem Weg als Entwickler.',
 
-  itch_link: 'Alle Projekte auf itch.io ↗',
+    itch_link: 'Alle Projekte auf itch.io ↗',
 
-  tag_student: 'STUDIUM',
-  tag_proto: 'PROTOTYP',
+    tag_student: 'STUDIUM',
+    tag_proto: 'PROTOTYP',
 
-  see_all: 'ALLE<br>PROJEKTE',
-  all_projects: 'ALLE PROJEKTE',
+    see_all: 'ALLE<br>PROJEKTE',
+    all_projects: 'ALLE PROJEKTE',
 
-  skills_tag: '// 04 — KENNTNISSE',
-  skills_title: 'FÄHIGKEITEN',
+    skills_tag: '// 04 — KENNTNISSE',
+    skills_title: 'FÄHIGKEITEN',
 
-  skills_dev: 'ENTWICKLUNG',
-  skills_design: 'DESIGN',
-  skills_tools: 'WERKZEUGE',
+    skills_dev: 'ENTWICKLUNG',
+    skills_design: 'DESIGN',
+    skills_tools: 'WERKZEUGE',
 
-  skills_note: '// persönliche Selbsteinschätzung.',
+    skills_note: '// persönliche Selbsteinschätzung.',
 
-  contact_tag: '// 05 — KONTAKT',
-  contact_title: 'KONTAKT',
+    contact_tag: '// 05 — KONTAKT',
+    contact_title: 'KONTAKT',
 
-  contact_sub: 'Ich freue mich über spannende Projekte, berufliche Möglichkeiten oder einfach einen guten Austausch über Spieleentwicklung.',
+    contact_sub: 'Ich freue mich über spannende Projekte, berufliche Möglichkeiten oder einfach einen guten Austausch über Spieleentwicklung.',
 
-  lb_title: 'ONLINE FINDEN',
-  lb_studio: 'Studio-Website',
+    lb_title: 'ONLINE FINDEN',
+    lb_studio: 'Studio-Website',
 
-  footer_center: 'GAME OVER? NIEMALS.'
-}
+    footer_center: 'GAME OVER? NIEMALS.'
+  }
 };
 
 /* ═══════════════════════════════════════════════════════════
@@ -296,7 +294,6 @@ function initPhoto() {
   const placeholder = document.querySelector('.photo-placeholder');
   if (!img || !placeholder) return;
 
-  // Reset: placeholder hidden by default, show only on actual error
   placeholder.style.display = 'none';
   img.style.display = 'block';
 
@@ -305,7 +302,6 @@ function initPhoto() {
     placeholder.style.display = 'flex';
   });
 
-  // Force a reload check in case browser cached a previous 404
   const src = img.src;
   img.src = '';
   img.src = src;

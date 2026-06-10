@@ -237,17 +237,29 @@ nav a:hover::before { width: 100%; }
   max-width: 620px; flex: 1;
   opacity: 0; animation: slideUp 0.8s ease 0.1s forwards;
 }
-.hero-title { margin-bottom: 24px; display: flex; flex-direction: column; gap: 4px; }
+
+/* ── HERO TITLE ──────────────────────────────────────────── */
+.hero-title {
+  margin-bottom: 24px;
+  display: flex; flex-direction: column; gap: 12px;
+}
 .ht-sub {
   font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 4px;
-  color: var(--amber-dim); display: block; margin-bottom: 8px;
+  color: var(--amber-dim); display: block;
+}
+/* .hero-role: the subtitle line under the name */
+.hero-role {
+  margin-top: 4px;
+  letter-spacing: 3px !important;
+  color: var(--amber) !important;
+  opacity: 0.85;
 }
 .ht-main {
   font-family: var(--font-px); font-size: clamp(1.6rem, 4vw, 3rem);
   color: var(--white); line-height: 1.5;
   text-shadow: 0 0 30px rgba(255,187,0,0.25);
 }
-.ht-accent { color: var(--amber); text-shadow: 0 0 30px rgba(255,187,0,0.6); }
+
 .hero-desc {
   font-size: 0.95rem; color: var(--white-dim); line-height: 1.8;
   margin-bottom: 36px; max-width: 440px;
@@ -281,21 +293,16 @@ nav a:hover::before { width: 100%; }
 /* ── HERO PHOTO ──────────────────────────────────────────── */
 .hero-right {
   flex-shrink: 0;
-  padding-right: 24px;   /* room for right border + glow to breathe */
-  margin-left: -48px;    /* pull toward left side of hero */
   opacity: 0; animation: slideUp 0.8s ease 0.35s forwards;
 }
 .photo-frame {
-  border-top:    2px solid var(--amber);
-  border-left:   2px solid var(--amber);
-  border-right:  2px solid var(--amber);
-  border-bottom: 2px solid var(--amber);
+  border: 2px solid var(--amber);
   box-shadow:
     0 0 0 1px rgba(255,187,0,0.25),
-    0 0 56px rgba(255,187,0,0.18),
-    4px 0 24px rgba(255,187,0,0.12);   /* extra glow on right edge */
+    0 0 56px rgba(255,187,0,0.18);
   display: flex; flex-direction: column;
   width: 290px;
+  overflow: hidden;
 }
 .photo-inner {
   width: 290px; height: 400px;
@@ -358,18 +365,15 @@ nav a:hover::before { width: 100%; }
 .about-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 24px auto;   /* top row · gap row · bottom row */
+  grid-template-rows: auto 24px auto;
   gap: 4px;
 }
 
-/* Top row: Titles + Shipped */
 .stat-card:nth-child(1),
 .stat-card:nth-child(2) { grid-row: 1; }
 
-/* Spacer row */
 .stat-spacer { grid-column: 1 / -1; grid-row: 2; }
 
-/* Bottom row: Years Active + Pro XP */
 .stat-card:nth-child(4),
 .stat-card:nth-child(5) { grid-row: 3; }
 
@@ -385,7 +389,6 @@ nav a:hover::before { width: 100%; }
   transform: translateY(-3px);
   box-shadow: 0 0 24px rgba(255,187,0,0.3);
 }
-/* ? mark corner — Mario homage */
 .stat-card::before {
   content: '?';
   position: absolute; top: 6px; right: 8px;
@@ -562,7 +565,7 @@ footer { border-top: 2px solid var(--border-md); padding: 20px 6%; background: v
 }
 @media (max-width: 900px) {
   .hero { flex-direction: column; align-items: flex-start; gap: 40px; padding-top: 80px; }
-  .hero-right { width: 100%; display: flex; justify-content: center; margin-left: 0; padding-right: 0; }
+  .hero-right { width: 100%; display: flex; justify-content: center; }
   .game-card { grid-template-columns: 1fr; }
   .gc-screen { height: 200px; }
   .contact-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -574,7 +577,7 @@ footer { border-top: 2px solid var(--border-md); padding: 20px 6%; background: v
   .hero { padding: 76px 4% 56px; }
   .skills-board { grid-template-columns: 1fr; }
   .arcade-grid { grid-template-columns: 1fr 1fr; }
-  .hero-title .ht-main { font-size: 1.4rem; }
+  .ht-main { font-size: 1.4rem; }
   .header-right { gap: 10px; }
   .lang-btn span { display: none; }
 }
