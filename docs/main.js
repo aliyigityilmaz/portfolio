@@ -3,9 +3,6 @@
    i18n: TR / EN / DE  ·  photo fix  ·  scroll reveals
 ═══════════════════════════════════════════════════════════ */
 
-/* ═══════════════════════════════════════════════════════════
-   TRANSLATIONS
-═══════════════════════════════════════════════════════════ */
 const TRANSLATIONS = {
   tr: {
     nav_about: 'HAKKIMDA',
@@ -29,9 +26,7 @@ const TRANSLATIONS = {
     about_title: 'OYUNCU<br>PROFİLİ',
 
     about_p1: 'Ben Ali Yiğit. Oyun geliştirici ve <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a> kurucu ortağıyım. 2021 yılından beri oyun geliştiriyorum. Eğitim hayatım İstanbul ve Almanya arasında geçti. Toplamda yaklaşık 6 yıllık deneyime, bunun 3 yılında ise profesyonel çalışma geçmişine sahibim.',
-
     about_p2: 'Google Game & App Academy mezunuyum. Tasarımdan geliştirmeye kadar üretimin tüm aşamalarında aktif rol alıyorum. Genellikle küçük ama yüksek motivasyonlu ekiplerle çalışıyor, oyuncunun zamanına değer veren deneyimler üretmeye odaklanıyorum.',
-
     about_p3: 'Beni en çok heyecanlandıran şey, bir mekaniğin tam anlamıyla yerine oturduğu andır. Kontrollerin hissi, zorluk eğrisinin ritmi ve bir sistemin kusursuz çalışmasının verdiği o sessiz tatmin.',
 
     badge1: '🎓 Oyun Tasarımı Mezunu',
@@ -49,6 +44,7 @@ const TRANSLATIONS = {
 
     games_tag: '// 02 — PROFESYONEL PROJELER',
     games_title: 'PROJE<br>SEÇ',
+    games_studio_note: '// Aşağıdaki tüm projeler <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a> bünyesinde geliştirilmektedir.',
 
     kic_role: 'Oyun Geliştirici — Triarch Interactive',
     kic_desc: 'İlk ticari oyunum. Temel oynanış tasarımından geliştirme sürecine, testlerden Steam çıkışına kadar projenin her aşamasında yer aldım. Bir oyunu fikir aşamasından yayına kadar taşımanın ne gerektirdiğini bu projede öğrendim.',
@@ -56,8 +52,11 @@ const TRANSLATIONS = {
     kic2_role: 'Oyun Geliştirici — Triarch Interactive',
     kic2_desc: 'Serinin ikinci oyunu. Yeni mekanikler, yeni bir ortam ve daha olgun bir geliştirme süreci. İlk projeden edindiğimiz deneyimleri burada uyguluyoruz.',
 
-    ec_role: 'Tasarım & Geliştirme',
+    ec_role: 'Tasarım & Geliştirme — Triarch Interactive',
     ec_desc: 'Bugüne kadar üzerinde çalıştığım en iddialı tasarım projesi. Hem oyun tasarımı hem de geliştirme tarafını üstleniyorum. Oyuncunun kararlarının gerçekten önem taşıdığı ve zorluk eğrisinin hissedildiği bir deneyim yaratmayı hedefliyorum.',
+
+    tts_role: 'UI/UX Tasarımcı — Triarch Interactive',
+    tts_desc: 'Ana projelerimin yanında destek olduğum bir Triarch Interactive projesi. UI/UX tasarımı üstlenerek ekibe katkı sağlıyorum.',
 
     btn_steam: 'STEAM SAYFASI',
     coming_soon: 'YAKINDA',
@@ -66,32 +65,26 @@ const TRANSLATIONS = {
     personal_title: 'PROJE<br>ARŞİVİ',
 
     arcade_intro: 'Öğrencilik döneminden ve kişisel çalışmalarımdan projeler. Deneyler, game jam çalışmaları ve öğrenme süreçleri. Kusursuz değiller ama gelişimimin önemli parçaları.',
-
     itch_link: 'Tüm projeler itch.io\'da ↗',
 
     tag_student: 'ÖĞRENCİ',
     tag_proto: 'PROTOTİP',
-
     see_all: 'TÜMÜNÜ<br>GÖR',
     all_projects: 'TÜM PROJELER',
 
     skills_tag: '// 04 — YETENEKLER',
     skills_title: 'YETENEKLER',
-
     skills_dev: 'GELİŞTİRME',
     skills_design: 'TASARIM',
     skills_tools: 'ARAÇLAR',
-
     skills_note: '// kişisel değerlendirme.',
 
     contact_tag: '// 05 — İLETİŞİM',
     contact_title: 'İLETİŞİM',
-
     contact_sub: 'İş birlikleri, kariyer fırsatları veya oyun geliştirme üzerine güzel bir sohbet için bana ulaşabilirsin.',
 
     lb_title: 'BENİ BUL',
     lb_studio: 'Stüdyo Sitesi',
-
     footer_center: 'GAME OVER? ASLA.'
   },
 
@@ -132,12 +125,17 @@ const TRANSLATIONS = {
 
     games_tag:   '// 02 — PROFESSIONAL TITLES',
     games_title: 'STAGE<br>SELECT',
+    games_studio_note: '// All titles below are developed under <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>.',
+
     kic_role:  'Game Developer — Triarch Interactive',
     kic_desc:  'My first shipped title. Built end-to-end: core loop design, implementation, shipped to Steam. Learned what it really takes to finish a game.',
     kic2_role: 'Game Developer — Triarch Interactive',
     kic2_desc: 'Second entry in the series. Different setting, new mechanics. Found the formula for moving fast without breaking everything.',
-    ec_role:   'Designer & Developer',
+    ec_role:   'Designer & Developer — Triarch Interactive',
     ec_desc:   'My most design-forward project yet — leading both game design and development. Meaningful decisions, a difficulty curve you can actually feel.',
+    tts_role:  'UI/UX Designer — Triarch Interactive',
+    tts_desc:  'A Triarch Interactive project I\'m contributing to alongside my main titles — supporting the team on UI/UX design.',
+
     btn_steam:   'GET ON STEAM',
     coming_soon: 'COMING SOON',
 
@@ -176,7 +174,6 @@ const TRANSLATIONS = {
 
     hero_role: 'SPIELEENTWICKLER / DESIGNER',
     hero_desc: 'Spieleentwickler und Mitgründer von Triarch Interactive.<br>Ich entwickle Spiele, die Spieler wirklich bis zum Ende erleben möchten.',
-
     hero_btn_work: 'MEINE PROJEKTE',
     hero_btn_contact: 'KONTAKT',
 
@@ -188,9 +185,7 @@ const TRANSLATIONS = {
     about_title: 'PROFIL',
 
     about_p1: 'Ich bin Ali Yiğit, Spieleentwickler und Mitgründer von <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>. Seit 2021 entwickle ich Spiele und habe sowohl in Istanbul als auch in Deutschland studiert. Insgesamt verfüge ich über rund sechs Jahre Erfahrung, davon drei Jahre im professionellen Umfeld.',
-
     about_p2: 'Als Absolvent der Google Game & App Academy begleite ich Projekte über den gesamten Entwicklungsprozess hinweg – von der Konzeption bis zur Umsetzung. Besonders gerne arbeite ich in kleinen, fokussierten Teams mit klaren Zielen und hoher Eigenverantwortung.',
-
     about_p3: 'Besonders faszinieren mich die Momente, in denen eine Spielmechanik perfekt funktioniert: das Gefühl einer Steuerung, der Rhythmus einer Herausforderung und die Zufriedenheit, wenn jedes System genau so arbeitet, wie es vorgesehen ist.',
 
     badge1: '🎓 Game-Design Absolvent',
@@ -208,49 +203,43 @@ const TRANSLATIONS = {
 
     games_tag: '// 02 — VERÖFFENTLICHTE & AKTUELLE PROJEKTE',
     games_title: 'PROJEKT<br>AUSWAHL',
+    games_studio_note: '// Alle folgenden Projekte entstehen unter <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>.',
 
     kic_role: 'Spieleentwickler — Triarch Interactive',
     kic_desc: 'Mein erstes veröffentlichtes Spiel. Von der Gestaltung des Core-Loops über die technische Umsetzung bis hin zur Veröffentlichung auf Steam war ich an allen wesentlichen Bereichen beteiligt. Dieses Projekt hat mir gezeigt, was es wirklich bedeutet, ein Spiel erfolgreich abzuschließen.',
-
     kic2_role: 'Spieleentwickler — Triarch Interactive',
     kic2_desc: 'Der zweite Teil der Reihe. Neue Umgebung, neue Mechaniken und ein deutlich reiferer Entwicklungsprozess. Viele der Erkenntnisse aus dem ersten Projekt fließen direkt in dieses Spiel ein.',
-
-    ec_role: 'Design & Entwicklung',
+    ec_role: 'Design & Entwicklung — Triarch Interactive',
     ec_desc: 'Mein bislang ambitioniertestes Designprojekt. Ich verantworte sowohl das Game Design als auch die technische Entwicklung. Ziel ist ein Spielerlebnis, in dem Entscheidungen spürbare Konsequenzen haben und die Progression bewusst gestaltet ist.',
+    tts_role: 'UI/UX Designer — Triarch Interactive',
+    tts_desc: 'Ein Triarch Interactive-Projekt, das ich parallel zu meinen Hauptprojekten unterstütze — mein Beitrag liegt im Bereich UI/UX-Design.',
 
     btn_steam: 'AUF STEAM',
     coming_soon: 'DEMNÄCHST',
 
     personal_tag: '// 03 — PERSÖNLICHE PROJEKTE',
     personal_title: 'PROJEKT<br>ARCHIV',
-
     arcade_intro: 'Studien- und Privatprojekte, Experimente sowie Game-Jam-Beiträge. Nicht jedes Projekt wurde vollständig ausgearbeitet, aber jedes einzelne war ein wichtiger Schritt auf meinem Weg als Entwickler.',
-
     itch_link: 'Alle Projekte auf itch.io ↗',
 
     tag_student: 'STUDIUM',
     tag_proto: 'PROTOTYP',
-
     see_all: 'ALLE<br>PROJEKTE',
     all_projects: 'ALLE PROJEKTE',
 
     skills_tag: '// 04 — KENNTNISSE',
     skills_title: 'FÄHIGKEITEN',
-
     skills_dev: 'ENTWICKLUNG',
     skills_design: 'DESIGN',
     skills_tools: 'WERKZEUGE',
-
     skills_note: '// persönliche Selbsteinschätzung.',
 
     contact_tag: '// 05 — KONTAKT',
     contact_title: 'KONTAKT',
-
     contact_sub: 'Ich freue mich über spannende Projekte, berufliche Möglichkeiten oder einfach einen guten Austausch über Spieleentwicklung.',
 
     lb_title: 'ONLINE FINDEN',
     lb_studio: 'Studio-Website',
-
     footer_center: 'GAME OVER? NIEMALS.'
   }
 };
@@ -287,7 +276,7 @@ function initLangSwitcher() {
 }
 
 /* ═══════════════════════════════════════════════════════════
-   PHOTO FALLBACK — show placeholder only if src fails
+   PHOTO FALLBACK
 ═══════════════════════════════════════════════════════════ */
 function initPhoto() {
   const img = document.querySelector('.photo-inner img');
@@ -318,7 +307,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const startBtn  = document.getElementById('intro-start');
   const skipBtn   = document.getElementById('intro-skip');
 
-  /* Canvas particles */
   const canvas = document.getElementById('intro-canvas');
   let rafId = null;
   if (canvas) {
@@ -355,7 +343,6 @@ document.addEventListener('DOMContentLoaded', function () {
     drawParticles();
   }
 
-  /* Boot lines */
   document.querySelectorAll('.boot-line').forEach(line => {
     const delay = parseInt(line.dataset.delay || 0, 10);
     setTimeout(() => line.classList.add('show'), delay + 200);
@@ -364,7 +351,6 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(() => nameBlock.classList.add('show'), 1800);
   }
 
-  /* Enter site */
   let leaving = false;
   function enterSite() {
     if (leaving) return;
@@ -395,19 +381,15 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   document.addEventListener('keydown', onKeyDown);
 
-}); // /DOMContentLoaded
+});
 
 /* ═══════════════════════════════════════════════════════════
    SITE INIT
 ═══════════════════════════════════════════════════════════ */
 function initSite() {
-  /* Photo */
   initPhoto();
-
-  /* Language switcher */
   initLangSwitcher();
 
-  /* Header shrink */
   const headerEl = document.getElementById('site-header');
   if (headerEl) {
     window.addEventListener('scroll', function() {
@@ -415,7 +397,6 @@ function initSite() {
     }, { passive: true });
   }
 
-  /* Scroll reveal */
   const revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     const obs = new IntersectionObserver(function(entries) {
@@ -428,7 +409,6 @@ function initSite() {
     revealEls.forEach(function(el) { el.classList.add('active'); });
   }
 
-  /* Smooth scroll */
   document.addEventListener('click', function(e) {
     const a = e.target.closest('a[href^="#"]');
     if (!a) return;

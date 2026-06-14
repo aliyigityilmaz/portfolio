@@ -593,3 +593,15 @@ footer { border-top: 2px solid var(--border-md); padding: 20px 6%; background: v
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
+
+/* ── GAMES STUDIO NOTE ───────────────────────────────────── */
+.games-studio-note {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  color: var(--amber-dim);
+  opacity: 0.75;
+  margin-bottom: 32px;
+  margin-top: -28px;
+}
+.games-studio-note a { color: var(--amber); }
