@@ -14,7 +14,7 @@ const TRANSLATIONS = {
     marquee: 'OYUN GELİŞTİRİCİ &nbsp;·&nbsp; KURUCU ORTAK &nbsp;·&nbsp; İSTANBUL &nbsp;·&nbsp; OYUN TASARIMI MEZUNU &nbsp;·&nbsp;&nbsp; OYUN GELİŞTİRİCİ &nbsp;·&nbsp; KURUCU ORTAK &nbsp;·&nbsp; İSTANBUL &nbsp;·&nbsp; OYUN TASARIMI MEZUNU &nbsp;·&nbsp;&nbsp;',
 
     hero_role: 'OYUN GELİŞTİRİCİ / TASARIMCI',
-    hero_desc: 'Oyun geliştirici ve <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a> kurucu ortağı.<br>İnsanların gerçekten sonuna kadar oynamak isteyeceği oyunlar geliştiriyorum.',
+    hero_desc: 'Oyun geliştirici ve <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a> kurucu ortağı.<br>İnsanların gerçekten oynamak isteyeceği oyunlar geliştiriyorum.',
     hero_btn_work: 'PROJELERİM',
     hero_btn_contact: 'İLETİŞİME GEÇ',
 
@@ -25,9 +25,9 @@ const TRANSLATIONS = {
     about_tag: '// 01 — HAKKIMDA',
     about_title: 'OYUNCU<br>PROFİLİ',
 
-    about_p1: 'Ben Ali Yiğit. Oyun geliştirici ve <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a> kurucu ortağıyım. 2021 yılından beri oyun geliştiriyorum. Eğitim hayatım İstanbul ve Almanya arasında geçti. Toplamda yaklaşık 6 yıllık deneyime, bunun 3 yılında ise profesyonel çalışma geçmişine sahibim.',
-    about_p2: 'Google Game & App Academy mezunuyum. Tasarımdan geliştirmeye kadar üretimin tüm aşamalarında aktif rol alıyorum. Genellikle küçük ama yüksek motivasyonlu ekiplerle çalışıyor, oyuncunun zamanına değer veren deneyimler üretmeye odaklanıyorum.',
-    about_p3: 'Beni en çok heyecanlandıran şey, bir mekaniğin tam anlamıyla yerine oturduğu andır. Kontrollerin hissi, zorluk eğrisinin ritmi ve bir sistemin kusursuz çalışmasının verdiği o sessiz tatmin.',
+    about_p1: 'Ben Ali Yiğit — full-stack oyun geliştirici ve <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a> kurucu ortağı. 2021\'den beri oyun geliştiriyorum; İstanbul ve Almanya\'da eğitim aldım. Toplamda yaklaşık 6 yıl, bunun 3 yılı profesyonel deneyim.',
+    about_p2: 'Google Game & App Academy mezunuyum. Oyun tasarımından koda, level tasarımından VFX ve UI\'a, Steam entegrasyonuna kadar üretim sürecinin tamamına sahibim. Unity birincil araçım ve onu derinlemesine biliyorum. Gerçekten oyun çıkaran küçük, odaklı ekiplerle çalışıyorum.',
+    about_p3: 'Beni motive eden şey bir sistemin hayata geçtiğini görmek — tam doğru anda dallanan bir diyalog ağacı, doğal hissettiren bir envanter sistemi, hikayeyi mekaniğe bağlayan bir görev sistemi. Kodun tam olması gerektiği gibi çalıştığı o an? İşte o his peşindeyim.',
 
     badge1: '🎓 Oyun Tasarımı Mezunu',
     badge2: '🏫 İstanbul & Almanya',
@@ -47,16 +47,13 @@ const TRANSLATIONS = {
     games_studio_note: '// Aşağıdaki tüm projeler <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a> bünyesinde geliştirilmektedir.',
 
     kic_role: 'Oyun Geliştirici — Triarch Interactive',
-    kic_desc: 'İlk ticari oyunum. Temel oynanış tasarımından geliştirme sürecine, testlerden Steam çıkışına kadar projenin her aşamasında yer aldım. Bir oyunu fikir aşamasından yayına kadar taşımanın ne gerektirdiğini bu projede öğrendim.',
-
+    kic_desc: 'İlk ticari oyunum — ve her parçasını ben yaptım. Temel döngü tasarımı, tüm oynanış sistemleri, ışıklandırma, VFX, shader çalışmaları, level tasarımı, UI tasarımı ve implementasyonu, Steam mağaza görselleri, kapsül sanatı — ilk kod satırından Steam sayfasına kadar her şey. Steam görsellerini de dahil olmak üzere tüm sanat yönünü ben üstlendim. Bir oyunu konseptten lansmanına taşımanın gerçekte ne gerektirdiğini bu projede öğrendim.',
     kic2_role: 'Oyun Geliştirici — Triarch Interactive',
-    kic2_desc: 'Serinin ikinci oyunu. Yeni mekanikler, yeni bir ortam ve daha olgun bir geliştirme süreci. İlk projeden edindiğimiz deneyimleri burada uyguluyoruz.',
-
+    kic2_desc: 'Serinin ikinci oyunu — ve bir kez daha tüm stack bende. Ana oynanış döngüsü, tüm core sistemler, ortam tasarımı, ışıklandırma, VFX, UI tasarımı ve implementasyonu, Steam mağaza görselleri — hepsi benim fikrim, hepsi benim kodum. Yeni bir ortam, yeni mekanikler ve bunu daha önce yapmış bir ekibin prodüksiyon verimliliği.',
     ec_role: 'Tasarım & Geliştirme — Triarch Interactive',
-    ec_desc: 'Bugüne kadar üzerinde çalıştığım en iddialı tasarım projesi. Hem oyun tasarımı hem de geliştirme tarafını üstleniyorum. Oyuncunun kararlarının gerçekten önem taşıdığı ve zorluk eğrisinin hissedildiği bir deneyim yaratmayı hedefliyorum.',
-
-    tts_role: 'UI/UX Tasarımcı — Triarch Interactive',
-    tts_desc: 'Ana projelerimin yanında destek olduğum bir Triarch Interactive projesi. UI/UX tasarımı üstlenerek ekibe katkı sağlıyorum.',
+    ec_desc: 'Bugüne kadar üzerinde çalıştığım en iddialı projem — ve her şapkayı takan benim. Oyun tasarımı, tüm sistemlerin mimarisi, oynanış programlama, VFX, ışıklandırma, UI tasarımı ve kodu, Steam mağaza görselleri: tamamen benim. Modelleme dışında üretim sürecinin her katmanı bana ait. Tasarım düşüncemi en çok bu projede ileri taşıdım — gerçekten hissedilen bir zorluk eğrisi, anlamlı oyuncu kararları ve ustalığı ödüllendiren sistemler.',
+    tts_role: 'UI/UX Tasarımcı & Geliştirici — Triarch Interactive',
+    tts_desc: 'Ana projelerimin yanında katkı sağladığım bir Triarch Interactive oyunu. Tam UI/UX tasarımını ve Steam mağaza görsellerini üstlendim; oyun içi sistemlere ve Steam API entegrasyonuna da destek verdim — masaya hem tasarım hem de kod getiriyorum.',
 
     btn_steam: 'STEAM SAYFASI',
     coming_soon: 'YAKINDA',
@@ -71,6 +68,10 @@ const TRANSLATIONS = {
     tag_proto: 'PROTOTİP',
     see_all: 'TÜMÜNÜ<br>GÖR',
     all_projects: 'TÜM PROJELER',
+
+    sylvara_info: 'Sıra tabanlı açık dünya RPG. Savaş dışındaki her sistemi sıfırdan ben yazdım: oyuncu kontrolörü, envanter, zanaat, zaman sistemi, birden fazla bulmaca mekaniği, diyalog sistemi, görev sistemi ve tüm UI implementasyonu.',
+    lightyears_info: 'Erasmus değişim programı bitirme projem. Tam bir bullet hell: düşman yapay zekası ve davranış ağaçları, birden fazla oyuncu silahı, yetenek ağaçları, yükseltme sistemleri, çok aşamalı patron savaşları. Her sistem, her tasarım kararı, her kod satırı: benim.',
+    fallen_info: 'İlk seçim odaklı oyunum — oyuncu kararlarının gerçekten farklı sonuçlara yol açtığı bir görsel roman. Gizli diyaloglar, dallanma karakter yolları ve gerçekten önem taşıyan hikaye sonuçları. Anlatı sistemleri tasarımını ilk keşfettiğim proje.',
 
     skills_tag: '// 04 — YETENEKLER',
     skills_title: 'YETENEKLER',
@@ -98,7 +99,7 @@ const TRANSLATIONS = {
     marquee: 'GAME DEV &nbsp;·&nbsp; CO-FOUNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME DESIGN GRADUATE &nbsp;·&nbsp;&nbsp; GAME DEV &nbsp;·&nbsp; CO-FOUNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME DESIGN GRADUATE &nbsp;·&nbsp;&nbsp;',
 
     hero_role:       'GAME DEVELOPER / DESIGNER',
-    hero_desc:       'Game developer &amp; co-founder of Triarch Interactive.<br>Making games people actually want to finish.',
+    hero_desc:       'Game developer &amp; co-founder of Triarch Interactive.<br>Making games people actually want to play.',
     hero_btn_work:   'SEE MY WORK',
     hero_btn_contact:'GET IN TOUCH',
     ticker_label:    'NOW PLAYING:',
@@ -107,9 +108,9 @@ const TRANSLATIONS = {
 
     about_tag:   '// 01 — ABOUT',
     about_title: 'PLAYER<br>PROFILE',
-    about_p1:    'I\'m Ali Yiğit — game developer and co-founder of <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>. Making games since 2021; studied in Istanbul and Germany. Around 6 years total, 3 professional.',
-    about_p2:    'Google Game &amp; App Academy alumnus. I work across the full loop — design to code — in small teams that actually ship things. We make games that respect the player\'s time.',
-    about_p3:    'What keeps me going is the moment a mechanic <em>clicks</em>: the feel of a control, the rhythm of a challenge, the quiet satisfaction when a system does exactly what it should.',
+    about_p1:    'I\'m Ali Yiğit — full-stack game developer and co-founder of <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>. Making games since 2021; studied in Istanbul and Germany. Around 6 years total, 3 professional.',
+    about_p2:    'Google Game &amp; App Academy alumnus. I own the full pipeline — from game design and level design to code, VFX, UI, and Steam integration. Unity is my primary tool and I know it deeply. I work in small, focused teams that actually ship.',
+    about_p3:    'What drives me is seeing a system come alive — a dialogue tree branching at exactly the right moment, an inventory that feels natural, a quest system tying story to mechanics. That moment when your code does exactly what it\'s supposed to? That\'s the feeling I\'m chasing.',
     badge1: '🎓 Game Design Graduate',
     badge2: '🏫 Istanbul & Germany',
     badge3: '🏆 Google Game Academy',
@@ -128,25 +129,29 @@ const TRANSLATIONS = {
     games_studio_note: '// All titles below are developed under <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>.',
 
     kic_role:  'Game Developer — Triarch Interactive',
-    kic_desc:  'My first shipped title. Built end-to-end: core loop design, implementation, shipped to Steam. Learned what it really takes to finish a game.',
+    kic_desc:  'My first shipped commercial title — and I built every single piece of it. Core loop design, all gameplay systems, lighting, VFX, shader work, level design, UI design and implementation, Steam store visuals, capsule art — everything from the first line of code to the Steam page. That includes the visual identity of the game on Steam, which I art-directed and designed myself. This is where I learned what it truly takes to take a game from concept to launch.',
     kic2_role: 'Game Developer — Triarch Interactive',
-    kic2_desc: 'Second entry in the series. Different setting, new mechanics. Found the formula for moving fast without breaking everything.',
+    kic2_desc: 'The second entry in the series — and once again, I own the full stack. Main gameplay loop, all core systems, environment design, lighting, VFX, UI design and implementation, Steam store visuals — all my ideas, all my code. New setting, new mechanics, and the production efficiency of a team that\'s done this before.',
     ec_role:   'Designer & Developer — Triarch Interactive',
-    ec_desc:   'My most design-forward project yet — leading both game design and development. Meaningful decisions, a difficulty curve you can actually feel.',
-    tts_role:  'UI/UX Designer — Triarch Interactive',
-    tts_desc:  'A Triarch Interactive project I\'m contributing to alongside my main titles — supporting the team on UI/UX design.',
+    ec_desc:   'My most ambitious project to date — and the one where I wear every hat. Game design, all systems architecture, gameplay programming, VFX, lighting, UI design and code, Steam store visuals: fully mine. Everything outside of 3D modeling lives here, and all of it belongs to me. This is the project where I pushed my design thinking the furthest — meaningful player decisions, a difficulty curve you can actually feel, and systems that reward mastery.',
+    tts_role:  'UI/UX Designer & Developer — Triarch Interactive',
+    tts_desc:  'A Triarch Interactive title I\'m contributing to alongside my main projects. I handled the full UI/UX design and Steam store visuals, and lent a hand on in-game systems and Steam API integration — bringing both design and code to the table.',
 
     btn_steam:   'GET ON STEAM',
     coming_soon: 'COMING SOON',
 
     personal_tag:   '// 03 — PERSONAL PROJECTS',
     personal_title: 'ARCADE<br>CABINET',
-    arcade_intro:   'Student and personal projects — experiments, game jams, learning by doing. Not polished, not finished, but honest.',
+    arcade_intro:   'Student and personal projects — experiments, jam games, learning by doing. Not polished, not finished, but honest.',
     itch_link:      'Full library on itch.io ↗',
     tag_student:    'STUDENT',
     tag_proto:      'PROTOTYPE',
     see_all:        'SEE ALL<br>ON ITCH.IO',
     all_projects:   'ALL PROJECTS',
+
+    sylvara_info:    'Turn-based open world RPG. I built every system outside of combat: player controller, inventory, crafting, time system, multiple puzzle mechanics, dialogue system, quest system, and all UI implementation — from scratch.',
+    lightyears_info: 'My Erasmus exchange capstone project. A full bullet hell — enemy AI and behaviour trees, multiple player weapons, skill trees, upgrade systems, boss fights with multi-phase patterns. Every system, every design decision, every line of code: mine.',
+    fallen_info:     'My first choice-driven game — a visual novel where player decisions lead to genuinely different endings. Hidden dialogues, branching character paths, and story consequences that actually matter. The project where I first explored narrative systems design.',
 
     skills_tag:    '// 04 — SKILLS',
     skills_title:  'POWER<br>UPS',
@@ -173,7 +178,7 @@ const TRANSLATIONS = {
     marquee: 'SPIELEENTWICKLER &nbsp;·&nbsp; MITGRÜNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME-DESIGN ABSOLVENT &nbsp;·&nbsp;&nbsp; SPIELEENTWICKLER &nbsp;·&nbsp; MITGRÜNDER &nbsp;·&nbsp; ISTANBUL &nbsp;·&nbsp; GAME-DESIGN ABSOLVENT &nbsp;·&nbsp;&nbsp;',
 
     hero_role: 'SPIELEENTWICKLER / DESIGNER',
-    hero_desc: 'Spieleentwickler und Mitgründer von Triarch Interactive.<br>Ich entwickle Spiele, die Spieler wirklich bis zum Ende erleben möchten.',
+    hero_desc: 'Spieleentwickler und Mitgründer von Triarch Interactive.<br>Ich entwickle Spiele, die Spieler wirklich spielen wollen.',
     hero_btn_work: 'MEINE PROJEKTE',
     hero_btn_contact: 'KONTAKT',
 
@@ -184,9 +189,9 @@ const TRANSLATIONS = {
     about_tag: '// 01 — ÜBER MICH',
     about_title: 'PROFIL',
 
-    about_p1: 'Ich bin Ali Yiğit, Spieleentwickler und Mitgründer von <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>. Seit 2021 entwickle ich Spiele und habe sowohl in Istanbul als auch in Deutschland studiert. Insgesamt verfüge ich über rund sechs Jahre Erfahrung, davon drei Jahre im professionellen Umfeld.',
-    about_p2: 'Als Absolvent der Google Game & App Academy begleite ich Projekte über den gesamten Entwicklungsprozess hinweg – von der Konzeption bis zur Umsetzung. Besonders gerne arbeite ich in kleinen, fokussierten Teams mit klaren Zielen und hoher Eigenverantwortung.',
-    about_p3: 'Besonders faszinieren mich die Momente, in denen eine Spielmechanik perfekt funktioniert: das Gefühl einer Steuerung, der Rhythmus einer Herausforderung und die Zufriedenheit, wenn jedes System genau so arbeitet, wie es vorgesehen ist.',
+    about_p1: 'Ich bin Ali Yiğit — Full-Stack-Spieleentwickler und Mitgründer von <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>. Seit 2021 entwickle ich Spiele und habe sowohl in Istanbul als auch in Deutschland studiert. Insgesamt verfüge ich über rund sechs Jahre Erfahrung, davon drei Jahre im professionellen Umfeld.',
+    about_p2: 'Als Absolvent der Google Game & App Academy verantworte ich die gesamte Produktionspipeline — von Game Design und Level Design bis hin zu Code, VFX, UI und Steam-Integration. Unity ist mein primäres Werkzeug, das ich tiefgreifend beherrsche. Ich arbeite in kleinen, fokussierten Teams, die tatsächlich liefern.',
+    about_p3: 'Was mich antreibt, ist der Moment, in dem ein System zum Leben erwacht — ein Dialogbaum, der genau im richtigen Augenblick verzweigt, ein Inventar, das sich natürlich anfühlt, ein Questsystem, das Geschichte und Mechanik verbindet. Der Moment, in dem der Code exakt das tut, was er soll? Genau dieses Gefühl jage ich.',
 
     badge1: '🎓 Game-Design Absolvent',
     badge2: '🏫 Istanbul & Deutschland',
@@ -206,13 +211,13 @@ const TRANSLATIONS = {
     games_studio_note: '// Alle folgenden Projekte entstehen unter <a href="https://triarchinteractive.com" target="_blank" class="tlink">Triarch Interactive</a>.',
 
     kic_role: 'Spieleentwickler — Triarch Interactive',
-    kic_desc: 'Mein erstes veröffentlichtes Spiel. Von der Gestaltung des Core-Loops über die technische Umsetzung bis hin zur Veröffentlichung auf Steam war ich an allen wesentlichen Bereichen beteiligt. Dieses Projekt hat mir gezeigt, was es wirklich bedeutet, ein Spiel erfolgreich abzuschließen.',
+    kic_desc: 'Mein erstes veröffentlichtes kommerzielles Spiel — und ich habe jedes einzelne Teil davon gebaut. Core-Loop-Design, alle Gameplay-Systeme, Beleuchtung, VFX, Shader-Arbeit, Level Design, UI-Design und Implementierung, Steam-Store-Grafiken, Capsule Art — alles von der ersten Codezeile bis zur Steam-Seite. Das schließt die visuelle Identität des Spiels auf Steam ein, die ich selbst entworfen und gestaltet habe. Dieses Projekt hat mir gezeigt, was es wirklich bedeutet, ein Spiel vom Konzept bis zum Launch zu bringen.',
     kic2_role: 'Spieleentwickler — Triarch Interactive',
-    kic2_desc: 'Der zweite Teil der Reihe. Neue Umgebung, neue Mechaniken und ein deutlich reiferer Entwicklungsprozess. Viele der Erkenntnisse aus dem ersten Projekt fließen direkt in dieses Spiel ein.',
+    kic2_desc: 'Der zweite Teil der Reihe — und erneut liegt der gesamte Stack bei mir. Haupt-Gameplay-Loop, alle Core-Systeme, Umgebungsdesign, Beleuchtung, VFX, UI-Design und Implementierung, Steam-Store-Grafiken — alles meine Ideen, alles mein Code. Neue Umgebung, neue Mechaniken und die Produktionseffizienz eines Teams, das das schon einmal durchgemacht hat.',
     ec_role: 'Design & Entwicklung — Triarch Interactive',
-    ec_desc: 'Mein bislang ambitioniertestes Designprojekt. Ich verantworte sowohl das Game Design als auch die technische Entwicklung. Ziel ist ein Spielerlebnis, in dem Entscheidungen spürbare Konsequenzen haben und die Progression bewusst gestaltet ist.',
-    tts_role: 'UI/UX Designer — Triarch Interactive',
-    tts_desc: 'Ein Triarch Interactive-Projekt, das ich parallel zu meinen Hauptprojekten unterstütze — mein Beitrag liegt im Bereich UI/UX-Design.',
+    ec_desc: 'Mein bislang ambitioniertestes Projekt — und das, bei dem ich jeden Hut trage. Game Design, gesamte Systemarchitektur, Gameplay-Programmierung, VFX, Beleuchtung, UI-Design und Code, Steam-Store-Grafiken: vollständig von mir. Alles außer 3D-Modellierung liegt hier, und alles gehört mir. Dies ist das Projekt, bei dem ich mein Designdenken am weitesten vorangetrieben habe — bedeutungsvolle Spielerentscheidungen, eine Schwierigkeitskurve, die man wirklich spürt, und Systeme, die Können belohnen.',
+    tts_role: 'UI/UX Designer & Entwickler — Triarch Interactive',
+    tts_desc: 'Ein Triarch Interactive-Projekt, das ich parallel zu meinen Hauptprojekten unterstütze. Ich habe das vollständige UI/UX-Design und die Steam-Store-Grafiken übernommen und bei In-Game-Systemen sowie der Steam-API-Integration mitgewirkt — sowohl Design als auch Code.',
 
     btn_steam: 'AUF STEAM',
     coming_soon: 'DEMNÄCHST',
@@ -226,6 +231,10 @@ const TRANSLATIONS = {
     tag_proto: 'PROTOTYP',
     see_all: 'ALLE<br>PROJEKTE',
     all_projects: 'ALLE PROJEKTE',
+
+    sylvara_info: 'Rundenbasiertes Open-World-RPG. Ich habe jedes System außerhalb des Kampfes von Grund auf entwickelt: Spielersteuerung, Inventar, Handwerk, Zeitsystem, mehrere Rätselmechaniken, Dialogsystem, Questsystem und die gesamte UI-Implementierung.',
+    lightyears_info: 'Mein Abschlussprojekt aus dem Erasmus-Austauschprogramm. Ein vollständiges Bullet Hell — Gegner-KI und Verhaltensbäume, mehrere Spielerwaffen, Fähigkeitenbäume, Upgradesysteme, Bosskämpfe mit mehrphasigen Mustern. Jedes System, jede Designentscheidung, jede Codezeile: von mir.',
+    fallen_info: 'Mein erstes entscheidungsbasiertes Spiel — eine Visual Novel, in der Spielerentscheidungen zu echten unterschiedlichen Enden führen. Versteckte Dialoge, verzweigte Charakterpfade und Konsequenzen, die tatsächlich Gewicht haben. Das Projekt, in dem ich zum ersten Mal narrative Systemgestaltung erkundete.',
 
     skills_tag: '// 04 — KENNTNISSE',
     skills_title: 'FÄHIGKEITEN',
