@@ -75,9 +75,15 @@ const TRANSLATIONS = {
     see_all: 'TÜMÜNÜ<br>GÖR',
     all_projects: 'TÜM PROJELER',
 
+    tag_playable: 'OYNANABİLİR',
+    play_arcade_cta: 'OYNA<br>ARCADE OYUNLARI',
+    play_arcade_title: '5 MİNİ KARTUŞ',
+    am_select_title: 'KARTUŞ SEÇ',
+    arcade_select_hint: 'AŞAĞIDAN BİR KARTUŞ SEÇ',
+    arcade_default_hint: 'YÖN TUŞLARI İLE HAREKET',
+
     sylvara_info: 'Sıra tabanlı açık dünya RPG. Savaş dışındaki her sistemi sıfırdan ben yazdım: oyuncu kontrolörü, envanter, zanaat, zaman sistemi, birden fazla bulmaca mekaniği, diyalog sistemi, görev sistemi ve tüm UI implementasyonu.',
     lightyears_info: 'Erasmus değişim programı bitirme projem. Tam bir bullet hell: düşman yapay zekası ve davranış ağaçları, birden fazla oyuncu silahı, yetenek ağaçları, yükseltme sistemleri, çok aşamalı patron savaşları. Her sistem, her tasarım kararı, her kod satırı: benim.',
-    fallen_info: 'İlk seçim odaklı oyunum — oyuncu kararlarının gerçekten farklı sonuçlara yol açtığı bir görsel roman. Gizli diyaloglar, dallanma karakter yolları ve gerçekten önem taşıyan hikaye sonuçları. Anlatı sistemleri tasarımını ilk keşfettiğim proje.',
 
     skills_tag: '// 04 — YETENEKLER',
     skills_title: 'YETENEKLER',
@@ -161,9 +167,15 @@ const TRANSLATIONS = {
     see_all:        'SEE ALL<br>ON ITCH.IO',
     all_projects:   'ALL PROJECTS',
 
+    tag_playable:      'PLAYABLE',
+    play_arcade_cta:   'PLAY<br>ARCADE GAMES',
+    play_arcade_title: '5 MINI CARTRIDGES',
+    am_select_title:   'SELECT CARTRIDGE',
+    arcade_select_hint:'SELECT A CARTRIDGE BELOW',
+    arcade_default_hint:'ARROW KEYS TO MOVE',
+
     sylvara_info:    'Turn-based open world RPG. I built every system outside of combat: player controller, inventory, crafting, time system, multiple puzzle mechanics, dialogue system, quest system, and all UI implementation — from scratch.',
     lightyears_info: 'My Erasmus exchange capstone project. A full bullet hell — enemy AI and behaviour trees, multiple player weapons, skill trees, upgrade systems, boss fights with multi-phase patterns. Every system, every design decision, every line of code: mine.',
-    fallen_info:     'My first choice-driven game — a visual novel where player decisions lead to genuinely different endings. Hidden dialogues, branching character paths, and story consequences that actually matter. The project where I first explored narrative systems design.',
 
     skills_tag:    '// 04 — SKILLS',
     skills_title:  'POWER<br>UPS',
@@ -250,9 +262,15 @@ const TRANSLATIONS = {
     see_all: 'ALLE<br>PROJEKTE',
     all_projects: 'ALLE PROJEKTE',
 
+    tag_playable: 'SPIELBAR',
+    play_arcade_cta: 'SPIELEN<br>ARCADE-SPIELE',
+    play_arcade_title: '5 MINI-MODULE',
+    am_select_title: 'MODUL WÄHLEN',
+    arcade_select_hint: 'WÄHLE UNTEN EIN MODUL',
+    arcade_default_hint: 'PFEILTASTEN ZUM BEWEGEN',
+
     sylvara_info: 'Rundenbasiertes Open-World-RPG. Ich habe jedes System außerhalb des Kampfes von Grund auf entwickelt: Spielersteuerung, Inventar, Handwerk, Zeitsystem, mehrere Rätselmechaniken, Dialogsystem, Questsystem und die gesamte UI-Implementierung.',
     lightyears_info: 'Mein Abschlussprojekt aus dem Erasmus-Austauschprogramm. Ein vollständiges Bullet Hell — Gegner-KI und Verhaltensbäume, mehrere Spielerwaffen, Fähigkeitenbäume, Upgradesysteme, Bosskämpfe mit mehrphasigen Mustern. Jedes System, jede Designentscheidung, jede Codezeile: von mir.',
-    fallen_info: 'Mein erstes entscheidungsbasiertes Spiel — eine Visual Novel, in der Spielerentscheidungen zu echten unterschiedlichen Enden führen. Versteckte Dialoge, verzweigte Charakterpfade und Konsequenzen, die tatsächlich Gewicht haben. Das Projekt, in dem ich zum ersten Mal narrative Systemgestaltung erkundete.',
 
     skills_tag: '// 04 — KENNTNISSE',
     skills_title: 'FÄHIGKEITEN',
