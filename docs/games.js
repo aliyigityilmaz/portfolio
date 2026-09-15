@@ -141,7 +141,7 @@
       init() {
         snake = [{ x: 8, y: 12 }, { x: 7, y: 12 }, { x: 6, y: 12 }];
         dir = { x: 1, y: 0 }; nextDir = { x: 1, y: 0 };
-        food = randFood(); score = 0; state = 'intro'; tick = 0; speedFrames = 32;
+        food = randFood(); score = 0; state = 'intro'; tick = 0; speedFrames = 34;
         A.setScore(t('score_label') + ': 0');
         A.setOverlay(t('snake_intro'));
       },
@@ -168,7 +168,7 @@
         if (head.x === food.x && head.y === food.y) {
           score += 10; A.setScore(t('score_label') + ': ' + score);
           food = randFood();
-          if (speedFrames > 12) speedFrames -= 4;
+          if (speedFrames > 26) speedFrames -= 1;
         } else {
           snake.pop();
         }
