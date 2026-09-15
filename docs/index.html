@@ -108,8 +108,8 @@
         </div>
         <div class="wip-ticker">
           <span class="ticker-label" data-i18n="ticker_label">NOW PLAYING:</span>
-          <span class="ticker-val" data-i18n="ticker_1">Endless Check — Designer &amp; Developer</span>
-          <span class="ticker-val" data-i18n="ticker_2">Keep It Checked — Developer</span>
+          <span class="ticker-val" data-i18n="ticker_1">Tinker's Nook — Designer &amp; Developer</span>
+          <span class="ticker-val" data-i18n="ticker_2">Take That Shot — Developer</span>
         </div>
       </div>
       <div class="hero-right">
@@ -169,7 +169,7 @@
           <div class="stat-card">
             <div class="stat-screen">
               <div class="stat-label" data-i18n="stat_titles">TITLES</div>
-              <div class="stat-val">3</div>
+              <div class="stat-val">5</div>
               <div class="stat-unit" data-i18n="stat_games">GAMES</div>
             </div>
           </div>
@@ -206,11 +206,11 @@
 
       <div class="games-list">
 
-        <article class="game-card" data-status="live">
+        <article class="game-card" data-status="live" data-accent="green">
           <div class="gc-screen">
             <img src="assets/games/keepitcontained.png" alt="Keep It Contained">
             <div class="gc-screen-overlay">
-              <div class="gc-status live-badge">● LIVE</div>
+              <div class="gc-status live-badge">● <span data-i18n="status_live">LIVE</span></div>
             </div>
           </div>
           <div class="gc-info">
@@ -220,7 +220,15 @@
             </div>
             <h3 class="gc-title">KEEP IT CONTAINED</h3>
             <p class="gc-role" data-i18n="kic_role">Game Developer — Triarch Interactive</p>
-            <p class="gc-desc" data-i18n="kic_desc">My first shipped commercial title — and I built every single piece of it. Core loop design, all gameplay systems, lighting, VFX, shader work, level design, UI design and implementation, Steam store visuals, capsule art — everything from the first line of code to the Steam page. This is where I learned what it truly takes to take a game from concept to launch.</p>
+            <p class="gc-desc" data-i18n="kic_desc">My first commercially shipped title, and the project where I owned the entire production pipeline: core loop and systems design, gameplay programming, lighting, VFX, shader work, level design, UI design and implementation, plus the Steam store page and capsule art. It's where I learned, first-hand, what it actually takes to carry a game from concept to launch.</p>
+            <div class="gc-skills-label" data-i18n="gc_skills_label">SKILLS</div>
+            <div class="gc-skills">
+              <span class="gc-skill">Unity</span>
+              <span class="gc-skill">Gameplay Programming</span>
+              <span class="gc-skill">VFX &amp; Shaders</span>
+              <span class="gc-skill">Level Design</span>
+              <span class="gc-skill">UI/UX</span>
+            </div>
             <div class="gc-actions">
               <a href="https://store.steampowered.com/app/4251090/Keep_It_Contained/" target="_blank" class="btn-arcade-sm" data-i18n="btn_steam">GET ON STEAM</a>
               <a href="https://keepitcontained.net" target="_blank" class="btn-line-sm">WEBSITE ↗</a>
@@ -228,11 +236,11 @@
           </div>
         </article>
 
-        <article class="game-card" data-status="dev">
+        <article class="game-card" data-status="dev" data-accent="cyan">
           <div class="gc-screen gc-screen-dev">
             <img src="assets/games/keepitchecked.png" alt="Keep It Checked">
             <div class="gc-screen-overlay">
-              <div class="gc-status dev-badge">⬡ IN DEV</div>
+              <div class="gc-status dev-badge">⬡ <span data-i18n="status_dev">IN DEVELOPMENT</span></div>
             </div>
           </div>
           <div class="gc-info">
@@ -242,39 +250,25 @@
             </div>
             <h3 class="gc-title">KEEP IT CHECKED</h3>
             <p class="gc-role" data-i18n="kic2_role">Game Developer — Triarch Interactive</p>
-            <p class="gc-desc" data-i18n="kic2_desc">The second entry in the series — and once again, I own the full stack. Main gameplay loop, all core systems, environment design, lighting, VFX, UI design and implementation, and Steam store visuals are all mine. New setting, new mechanics, and the production efficiency of a team that's done this before.</p>
+            <p class="gc-desc" data-i18n="kic2_desc">The second entry in the series, built in Unity with a procedural-generation pipeline and HDRP for high-fidelity lighting and visuals. As with the first title, I own the full stack — gameplay systems, environment and level design, lighting, VFX, UI, and the Steam store presence — now with the production efficiency of a team that's shipped before.</p>
+            <div class="gc-skills-label" data-i18n="gc_skills_label">SKILLS</div>
+            <div class="gc-skills">
+              <span class="gc-skill">Unity</span>
+              <span class="gc-skill">Procedural Generation</span>
+              <span class="gc-skill">HDRP</span>
+              <span class="gc-skill">Lighting &amp; VFX</span>
+            </div>
             <div class="gc-actions">
-              <span class="btn-soon" data-i18n="coming_soon">COMING SOON</span>
+              <a href="https://store.steampowered.com/app/4870720/Keep_It_Checked/?curator_clanid=45915996" target="_blank" class="btn-arcade-sm" data-i18n="btn_wishlist">WISHLIST ON STEAM</a>
             </div>
           </div>
         </article>
 
-        <article class="game-card" data-status="dev">
-          <div class="gc-screen gc-screen-dev">
-            <img src="assets/games/endlesscheck.png" alt="Endless Check">
-            <div class="gc-screen-overlay">
-              <div class="gc-status dev-badge">⬡ IN DEV</div>
-            </div>
-          </div>
-          <div class="gc-info">
-            <div class="gc-meta">
-              <span class="gc-platform">STEAM</span>
-              <span class="gc-year">2026</span>
-            </div>
-            <h3 class="gc-title">ENDLESS CHECK</h3>
-            <p class="gc-role" data-i18n="ec_role">Designer &amp; Developer — Triarch Interactive</p>
-            <p class="gc-desc" data-i18n="ec_desc">My most ambitious project to date — and the one where I wear every hat. Game design, all systems architecture, gameplay programming, VFX, lighting, UI design and code, Steam store visuals: fully mine. This is the project where I pushed my design thinking the furthest — meaningful player decisions, a difficulty curve you can actually feel, and systems that reward mastery.</p>
-            <div class="gc-actions">
-              <span class="btn-soon" data-i18n="coming_soon">COMING SOON</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="game-card" data-status="dev">
+        <article class="game-card" data-status="dev" data-accent="pink">
           <div class="gc-screen gc-screen-dev">
             <img src="assets/games/tinkersnook.png" alt="Tinker's Nook">
             <div class="gc-screen-overlay">
-              <div class="gc-status dev-badge">⬡ IN DEV</div>
+              <div class="gc-status dev-badge">⬡ <span data-i18n="status_dev">IN DEVELOPMENT</span></div>
             </div>
           </div>
           <div class="gc-info">
@@ -284,18 +278,26 @@
             </div>
             <h3 class="gc-title">TINKER'S NOOK</h3>
             <p class="gc-role" data-i18n="tn_role">Game Designer &amp; Developer — Triarch Interactive</p>
-            <p class="gc-desc" data-i18n="tn_desc">My most ambitious project to date — and the one where I wear every hat. Game design, all systems architecture, gameplay programming, VFX, lighting, UI design and code, Steam store visuals: fully mine. This is the project where I pushed my design thinking the furthest — meaningful player decisions, a difficulty curve you can actually feel, and systems that reward mastery.</p>
+            <p class="gc-desc" data-i18n="tn_desc">A 2D cozy shop-management game where I own the full scope: game design, complete programming, and team leadership. Every system — from the crafting and shop loops to progression and UI — was planned and built by me, end to end.</p>
+            <div class="gc-skills-label" data-i18n="gc_skills_label">SKILLS</div>
+            <div class="gc-skills">
+              <span class="gc-skill">Unity</span>
+              <span class="gc-skill">Game Design</span>
+              <span class="gc-skill">Systems Design</span>
+              <span class="gc-skill">Team Leadership</span>
+              <span class="gc-skill">2D</span>
+            </div>
             <div class="gc-actions">
-              <span class="btn-soon" data-i18n="coming_soon">COMING SOON</span>
+              <a href="https://store.steampowered.com/app/5192760/Tinkers_Nook/?curator_clanid=45915996" target="_blank" class="btn-arcade-sm" data-i18n="btn_wishlist">WISHLIST ON STEAM</a>
             </div>
           </div>
         </article>
 
-        <article class="game-card" data-status="dev">
+        <article class="game-card" data-status="dev" data-accent="red">
           <div class="gc-screen gc-screen-dev">
             <img src="assets/games/taketheshot.png" alt="Take That Shot">
             <div class="gc-screen-overlay">
-              <div class="gc-status dev-badge">⬡ IN DEV</div>
+              <div class="gc-status dev-badge">⬡ <span data-i18n="status_dev">IN DEVELOPMENT</span></div>
             </div>
           </div>
           <div class="gc-info">
@@ -304,8 +306,43 @@
               <span class="gc-year">2026</span>
             </div>
             <h3 class="gc-title">TAKE THAT SHOT</h3>
-            <p class="gc-role" data-i18n="tts_role">UI/UX Designer &amp; Developer — Triarch Interactive</p>
-            <p class="gc-desc" data-i18n="tts_desc">A Triarch Interactive title I'm contributing to alongside my main projects. I handled the full UI/UX design, Steam store visuals, and lent a hand on in-game systems and Steam API integration — bringing both design and code to the table.</p>
+            <p class="gc-role" data-i18n="tts_role">Game Developer &amp; Game Systems Designer — Triarch Interactive</p>
+            <p class="gc-desc" data-i18n="tts_desc">A multiplayer-focused title, and the project where I've grown the most as a systems designer. I build networked gameplay with Unity's Mirror framework and handle Steamworks integration for lobbies, matchmaking, and platform features. My focus is on the systems that make multiplayer feel reliable and fun: netcode architecture, session flow, and core gameplay design.</p>
+            <div class="gc-skills-label" data-i18n="gc_skills_label">SKILLS</div>
+            <div class="gc-skills">
+              <span class="gc-skill">Unity</span>
+              <span class="gc-skill">Mirror Networking</span>
+              <span class="gc-skill">Steamworks</span>
+              <span class="gc-skill">Multiplayer Systems</span>
+            </div>
+            <div class="gc-actions">
+              <a href="https://store.steampowered.com/app/5191330/Take_That_Shot/?curator_clanid=45915996" target="_blank" class="btn-arcade-sm" data-i18n="btn_wishlist">WISHLIST ON STEAM</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card" data-status="dev" data-accent="purple">
+          <div class="gc-screen gc-screen-dev">
+            <img src="assets/games/endlesscheck.png" alt="Endless Check">
+            <div class="gc-screen-overlay">
+              <div class="gc-status dev-badge">⬡ <span data-i18n="status_dev">IN DEVELOPMENT</span></div>
+            </div>
+          </div>
+          <div class="gc-info">
+            <div class="gc-meta">
+              <span class="gc-platform">STEAM</span>
+              <span class="gc-year">2026</span>
+            </div>
+            <h3 class="gc-title">ENDLESS CHECK</h3>
+            <p class="gc-role" data-i18n="ec_role">Designer &amp; Developer — Triarch Interactive</p>
+            <p class="gc-desc" data-i18n="ec_desc">My most ambitious project to date, and the one where I wear every hat: game design, full systems architecture, gameplay programming, VFX, lighting, UI design and code, and the Steam store presence. It's where I've pushed my design thinking the furthest — meaningful player decisions, a difficulty curve you can actually feel, and systems that reward mastery.</p>
+            <div class="gc-skills-label" data-i18n="gc_skills_label">SKILLS</div>
+            <div class="gc-skills">
+              <span class="gc-skill">Unity</span>
+              <span class="gc-skill">Systems Architecture</span>
+              <span class="gc-skill">Gameplay Programming</span>
+              <span class="gc-skill">UI/UX</span>
+            </div>
             <div class="gc-actions">
               <span class="btn-soon" data-i18n="coming_soon">COMING SOON</span>
             </div>

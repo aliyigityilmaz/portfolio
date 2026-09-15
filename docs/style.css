@@ -21,6 +21,13 @@
   --border:      rgba(255,204,0,0.22);
   --border-md:   rgba(255,204,0,0.42);
 
+  /* Cabinet accent colors — per-title identity, arcade marquee palette */
+  --green:  #45e08a;
+  --cyan:   #34d6ff;
+  --pink:   #ff5fa8;
+  --red-acc:#ff5b45;
+  --purple: #b98bff;
+
   /* Type */
   --font-px:   'Press Start 2P', monospace;
   --font-mono: 'Share Tech Mono', monospace;
@@ -446,10 +453,20 @@ nav a:hover::before { width: 100%; }
 .games-list { display: flex; flex-direction: column; gap: 3px; }
 .game-card {
   display: grid; grid-template-columns: 320px 1fr;
-  border: 1px solid var(--border); background: var(--bg2);
-  overflow: hidden; transition: border-color 0.25s;
+  border: 1px solid var(--border); border-top: 3px solid var(--card-accent, var(--border-md));
+  background: var(--bg2);
+  overflow: hidden; transition: border-color 0.25s, box-shadow 0.25s;
 }
-.game-card:hover { border-color: var(--border-md); }
+.game-card:hover { border-color: var(--card-accent, var(--border-md)); box-shadow: 0 0 26px color-mix(in srgb, var(--card-accent, var(--amber)) 16%, transparent); }
+.game-card:hover { border-top-color: var(--card-accent, var(--border-md)); }
+
+/* Per-title identity colors — arcade cabinet marquee palette */
+.game-card[data-accent="green"]  { --card-accent: var(--green); }
+.game-card[data-accent="cyan"]   { --card-accent: var(--cyan); }
+.game-card[data-accent="pink"]   { --card-accent: var(--pink); }
+.game-card[data-accent="red"]    { --card-accent: var(--red-acc); }
+.game-card[data-accent="purple"] { --card-accent: var(--purple); }
+
 .gc-screen { position: relative; overflow: hidden; background: var(--bg3); }
 .gc-screen img {
   width: 100%; height: 100%; object-fit: cover;
@@ -463,15 +480,37 @@ nav a:hover::before { width: 100%; }
   font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 2px;
   padding: 5px 11px; border: 1px solid;
 }
-.live-badge  { color: var(--gold-px); border-color: rgba(255,224,51,0.55); background: rgba(255,224,51,0.1); }
-.dev-badge   { color: var(--amber); border-color: var(--border-md); background: rgba(255,204,0,0.07); }
+.live-badge  {
+  color: var(--green);
+  border-color: color-mix(in srgb, var(--green) 55%, transparent);
+  background: color-mix(in srgb, var(--green) 12%, transparent);
+}
+.dev-badge   {
+  color: var(--card-accent, var(--amber));
+  border-color: color-mix(in srgb, var(--card-accent, var(--amber)) 55%, transparent);
+  background: color-mix(in srgb, var(--card-accent, var(--amber)) 12%, transparent);
+}
 .gc-info { padding: 34px 38px; display: flex; flex-direction: column; gap: 14px; }
 .gc-meta { display: flex; justify-content: space-between; align-items: center; }
 .gc-platform { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 3px; color: var(--amber-dim); border: 1px solid var(--border); padding: 4px 9px; }
 .gc-year { font-family: var(--font-mono); font-size: 0.68rem; color: var(--white-dim); letter-spacing: 1px; opacity: 0.7; }
 .gc-title { font-family: var(--font-px); font-size: 1.05rem; color: var(--white); letter-spacing: 1px; line-height: 1.5; }
-.gc-role  { font-family: var(--font-mono); font-size: 0.75rem; color: var(--amber); letter-spacing: 1px; }
+.gc-role  { font-family: var(--font-mono); font-size: 0.75rem; color: var(--card-accent, var(--amber)); letter-spacing: 1px; }
 .gc-desc  { font-size: 0.95rem; color: var(--white-dim); line-height: 1.8; flex: 1; font-weight: 400; }
+
+.gc-skills-label {
+  font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 2px;
+  color: var(--white-dim); opacity: 0.5; text-transform: uppercase;
+}
+.gc-skills { display: flex; flex-wrap: wrap; gap: 7px; }
+.gc-skill {
+  font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.5px;
+  color: var(--card-accent, var(--amber-dim));
+  border: 1px solid color-mix(in srgb, var(--card-accent, var(--amber)) 42%, transparent);
+  background: color-mix(in srgb, var(--card-accent, var(--amber)) 8%, transparent);
+  padding: 4px 10px;
+}
+
 .gc-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
 .btn-arcade-sm {
   font-family: var(--font-px); font-size: 0.46rem; letter-spacing: 1px;
@@ -581,19 +620,22 @@ nav a:hover::before { width: 100%; }
 
 /* ── SKILLS ──────────────────────────────────────────────── */
 .skills-board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; margin-bottom: 32px; }
-.skill-panel  { border: 1px solid var(--border); background: var(--bg2); padding: 30px 26px; }
+.skill-panel  { border: 1px solid var(--border); border-top: 3px solid var(--panel-accent, var(--border-md)); background: var(--bg2); padding: 30px 26px; }
+.skill-panel:nth-child(1) { --panel-accent: var(--cyan); }
+.skill-panel:nth-child(2) { --panel-accent: var(--pink); }
+.skill-panel:nth-child(3) { --panel-accent: var(--green); }
 .skill-panel-title {
-  font-family: var(--font-px); font-size: 0.48rem; letter-spacing: 2px; color: var(--amber);
-  margin-bottom: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--border-md);
+  font-family: var(--font-px); font-size: 0.48rem; letter-spacing: 2px; color: var(--panel-accent, var(--amber));
+  margin-bottom: 26px; padding-bottom: 14px; border-bottom: 1px solid color-mix(in srgb, var(--panel-accent, var(--amber)) 55%, transparent);
 }
 .skill-list { list-style: none; display: flex; flex-direction: column; gap: 16px; }
 .skill-list li { display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto; gap: 5px 8px; align-items: center; }
 .sk-name { font-family: var(--font-mono); font-size: 0.82rem; color: var(--white); grid-column: 1; grid-row: 1; }
-.sk-pct  { font-family: var(--font-px); font-size: 0.44rem; color: var(--amber); grid-column: 2; grid-row: 1; text-align: right; }
+.sk-pct  { font-family: var(--font-px); font-size: 0.44rem; color: var(--panel-accent, var(--amber)); grid-column: 2; grid-row: 1; text-align: right; }
 .sk-bar  { height: 3px; background: var(--white-faint); width: 100%; overflow: hidden; grid-column: 1 / -1; grid-row: 2; }
 .sk-fill {
-  height: 100%; width: var(--w, 0%); background: var(--amber);
-  box-shadow: 0 0 8px rgba(255,204,0,0.6);
+  height: 100%; width: var(--w, 0%); background: var(--panel-accent, var(--amber));
+  box-shadow: 0 0 8px color-mix(in srgb, var(--panel-accent, var(--amber)) 60%, transparent);
   transform: scaleX(0); transform-origin: left;
   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
