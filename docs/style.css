@@ -618,18 +618,14 @@ nav a:hover::before { width: 100%; }
 /* ── ARCADE PLAY CARD (opens mini-games modal) ──────────── */
 button.arcade-card.arcade-play {
   appearance: none; -webkit-appearance: none;
-  font: inherit; margin: 0; padding: 0; text-align: left; cursor: pointer;
+  font: inherit; margin: 0; text-align: left; cursor: pointer;
+  border: none; padding: 3px; isolation: isolate;
 }
 .arcade-play .ac-tag { color: var(--gold-px); }
 .arcade-play:hover { box-shadow: 0 0 26px rgba(255,204,0,0.28); }
 .arcade-play .ac-more-icon { animation: blink 1.5s step-end infinite; }
 
 /* Rotating rainbow cartridge-slot frame */
-.arcade-play {
-  border: none;
-  padding: 3px;
-  isolation: isolate;
-}
 .arcade-play::before {
   content: '';
   position: absolute; z-index: -1;
