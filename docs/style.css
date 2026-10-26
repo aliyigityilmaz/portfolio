@@ -582,6 +582,7 @@ a.mobile-card:hover {
   font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 2px;
   color: var(--green); border-top: 1px solid var(--border); padding-top: 10px;
 }
+.mobile-card:not(.mobile-dev) .mc-role { color: var(--green); opacity: 1; }
 .mobile-soon { border-top-color: color-mix(in srgb, var(--green) 40%, transparent); }
 .mobile-soon .mc-store { color: var(--white-dim); opacity: 0.55; }
 .mobile-more { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 1px; }

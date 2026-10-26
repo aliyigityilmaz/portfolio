@@ -65,7 +65,9 @@ const TRANSLATIONS = {
 
     mobile_tag: '// 03 — MOBİL OYUNLAR',
     mobile_title: 'BONUS<br>BÖLÜMLER',
-    mobile_note: '// Triarch Interactive bünyesinde tasarlayıp geliştirdiğim mobil oyunlar — konseptten Google Play\'e kadar.',
+    mobile_note: '// Triarch Interactive bünyesinde geliştirdiğim mobil oyunlar — işaretli olanların tasarımı da bana ait.',
+    mobile_role_dev: 'GELİŞTİRME',
+    genre_casual: 'CASUAL',
     mobile_role: 'TASARIM & GELİŞTİRME',
     genre_puzzle: 'BULMACA',
     genre_idle: 'IDLE SİMÜLASYON',
@@ -173,7 +175,9 @@ const TRANSLATIONS = {
 
     mobile_tag:   '// 03 — MOBILE TITLES',
     mobile_title: 'BONUS<br>STAGES',
-    mobile_note:  '// Mobile games I designed and developed at Triarch Interactive — from concept to Google Play.',
+    mobile_note:  '// Mobile games I developed at Triarch Interactive — and designed, where marked — from concept to Google Play.',
+    mobile_role_dev: 'DEVELOPMENT',
+    genre_casual: 'CASUAL',
     mobile_role:  'DESIGN & DEVELOPMENT',
     genre_puzzle: 'PUZZLE',
     genre_idle:   'IDLE SIMULATION',
@@ -281,7 +285,9 @@ const TRANSLATIONS = {
 
     mobile_tag: '// 03 — MOBILE SPIELE',
     mobile_title: 'BONUS<br>LEVEL',
-    mobile_note: '// Mobile Spiele, die ich bei Triarch Interactive konzipiert und entwickelt habe — vom Konzept bis zu Google Play.',
+    mobile_note: '// Mobile Spiele, die ich bei Triarch Interactive entwickelt habe — die markierten auch konzipiert — bis zur Veröffentlichung auf Google Play.',
+    mobile_role_dev: 'ENTWICKLUNG',
+    genre_casual: 'CASUAL',
     mobile_role: 'DESIGN & ENTWICKLUNG',
     genre_puzzle: 'RÄTSEL',
     genre_idle: 'IDLE-SIMULATION',
