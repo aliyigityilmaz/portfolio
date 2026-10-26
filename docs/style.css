@@ -434,36 +434,34 @@ nav a:hover::before { width: 100%; }
 .about-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 24px auto;
-  gap: 4px;
+  gap: 14px 4px;
 }
-.stat-card:nth-child(1), .stat-card:nth-child(2) { grid-row: 1; }
-.stat-spacer { grid-column: 1 / -1; grid-row: 2; }
-.stat-card:nth-child(4), .stat-card:nth-child(5) { grid-row: 3; }
 .stat-card {
-  border: 2px solid var(--amber);
+  --stat-accent: var(--amber);
+  border: 2px solid var(--stat-accent);
   background: var(--bg2);
   overflow: hidden; position: relative;
   transition: transform 0.15s, box-shadow 0.15s;
   cursor: default;
 }
+.stat-card.stat-mobile { --stat-accent: var(--green); }
 .stat-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 28px rgba(255,204,0,0.35);
+  box-shadow: 0 0 28px color-mix(in srgb, var(--stat-accent) 35%, transparent);
 }
 .stat-card::before {
   content: '?';
   position: absolute; top: 6px; right: 8px;
   font-family: var(--font-px); font-size: 0.4rem;
-  color: rgba(255,204,0,0.2); pointer-events: none;
+  color: color-mix(in srgb, var(--stat-accent) 20%, transparent); pointer-events: none;
 }
 .stat-screen {
-  padding: 26px 16px; text-align: center;
+  padding: 22px 16px; text-align: center;
   display: flex; flex-direction: column; align-items: center; gap: 6px;
-  background: radial-gradient(ellipse at 50% 20%, rgba(255,204,0,0.09) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 20%, color-mix(in srgb, var(--stat-accent) 9%, transparent) 0%, transparent 70%);
 }
-.stat-label { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 2px; color: var(--amber-dim); text-transform: uppercase; }
-.stat-val   { font-family: var(--font-px); font-size: 2.3rem; color: var(--amber); text-shadow: 0 0 20px rgba(255,204,0,0.6); line-height: 1; }
+.stat-label { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 2px; color: color-mix(in srgb, var(--stat-accent) 75%, transparent); text-transform: uppercase; }
+.stat-val   { font-family: var(--font-px); font-size: 2.1rem; color: var(--stat-accent); text-shadow: 0 0 20px color-mix(in srgb, var(--stat-accent) 60%, transparent); line-height: 1; }
 .stat-unit  { font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 2px; color: var(--white-dim); opacity: 0.6; text-transform: uppercase; }
 
 /* ── GAMES ───────────────────────────────────────────────── */
@@ -547,6 +545,46 @@ nav a:hover::before { width: 100%; }
   padding: 11px 18px; border: 1px solid var(--border);
   color: var(--white-dim); opacity: 0.55; display: inline-block; cursor: default;
 }
+
+/* ── MOBILE TITLES ───────────────────────────────────────── */
+.mobile-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 3px; margin-bottom: 24px;
+}
+.mobile-card {
+  display: grid; grid-template-columns: 64px 1fr; grid-template-rows: 1fr auto;
+  gap: 12px 16px; padding: 18px;
+  background: var(--bg2); border: 1px solid var(--border);
+  border-top: 3px solid var(--green);
+  text-decoration: none; color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+a.mobile-card:hover {
+  border-color: var(--green);
+  box-shadow: 0 0 22px color-mix(in srgb, var(--green) 18%, transparent);
+  transform: translateY(-2px);
+}
+.mc-icon {
+  width: 64px; height: 64px; border-radius: 14px; object-fit: cover;
+  border: 1px solid color-mix(in srgb, var(--green) 35%, transparent);
+  background: var(--bg3);
+}
+.mc-icon-placeholder {
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-px); font-size: 0.75rem; color: var(--green);
+}
+.mc-info { display: flex; flex-direction: column; gap: 5px; min-width: 0; justify-content: center; }
+.mc-genre { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 2px; color: color-mix(in srgb, var(--green) 80%, transparent); }
+.mc-title { font-family: var(--font-px); font-size: 0.55rem; color: var(--white); letter-spacing: 1px; line-height: 1.6; }
+.mc-role  { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 1px; color: var(--white-dim); opacity: 0.7; }
+.mc-store {
+  grid-column: 1 / -1;
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 2px;
+  color: var(--green); border-top: 1px solid var(--border); padding-top: 10px;
+}
+.mobile-soon { border-top-color: color-mix(in srgb, var(--green) 40%, transparent); }
+.mobile-soon .mc-store { color: var(--white-dim); opacity: 0.55; }
+.mobile-more { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 1px; }
 
 /* ── ARCADE / PERSONAL ───────────────────────────────────── */
 .arcade-intro { font-size: 0.98rem; color: var(--white-dim); line-height: 1.85; margin-bottom: 36px; max-width: 580px; font-weight: 400; }
